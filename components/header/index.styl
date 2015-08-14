@@ -1,15 +1,38 @@
 .header
-  background red
+  background #C44
   height 350px
+  position relative
 
 .header nav
   width 100%
   height 62px
-  position absolute
-  top 0
-  left 0
+  // top 0
+  // left 0
   border-bottom 1px solid white
 
 .header svg
+  padding 10px
   polygon, path
     fill white
+
+.header-language-toggle
+  float right
+  margin 15px
+
+.header-chinese
+    width 40px
+    height 30px
+    border 1px solid white
+    display inline-block
+    margin-left 16px
+
+.header-text
+  margin 20px
+  font-size 21px
+  position absolute
+  top 50%
+  transform: translate(0, -50%)
+
+.header-text h1
+  margin 30px 0
+  color white
