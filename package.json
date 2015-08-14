@@ -1,0 +1,40 @@
+{
+  "name": "continuum",
+  "version": "1.0.0",
+  "description": "Arsty Chinese splash page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "css": "stylus components/layout/index.styl --out public/",
+    "html": "jade components/layout/index.jade --out public/",
+    "js": "browserify --transform coffeeify components/layout/index.coffee -o public/index.js",
+    "build": "npm run css & npm run html & npm run js",
+    "watch": "nodemon --watch components --ext styl,jade,coffee --exec 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artsy/continuum.git"
+  },
+  "keywords": [
+    "chinese",
+    "splash",
+    "page",
+    "artsy"
+  ],
+  "author": "Christina Thompson, Craig Spaeth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artsy/continuum/issues"
+  },
+  "homepage": "https://github.com/artsy/continuum#readme",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "coffee-script": "^1.9.3",
+    "coffeeify": "^1.1.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.1.4",
+    "nib": "^1.1.0",
+    "nodemon": "^1.4.1",
+    "stylus": "^0.52.0"
+  }
+}
