@@ -1,5 +1,4 @@
 .header {
-  background: #c44;
   height: 350px;
   position: relative;
   background-image: url("./images/Banner_3.jpg");
@@ -46,6 +45,33 @@
 .header-text h1 {
   margin: 30px 0;
   color: #fff;
+}
+footer.footer {
+  border-top: 1px solid #808080;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer-logo {
+  margin: 60px 0 30px 0;
+  text-align: center;
+}
+.footer-content {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer-content p {
+  margin-bottom: 20px;
+}
+.footer svg {
+  width: 140px;
+}
+.footer-contact-email {
+  text-decoration: underline;
+}
+.footer-email {
+  text-decoration: none;
+  color: #000;
 }
 html,
 body,
@@ -137,9 +163,4 @@ td {
 }
 a img {
   border: none;
-}
-body {
-  color: #00f;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
