@@ -1,4 +1,4 @@
 $ = require 'jquery'
 
-$ ->
-  alert 'hi'
+# $ ->
+#   alert 'hi'

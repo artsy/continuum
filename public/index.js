@@ -3,10 +3,6 @@ var $;
 
 $ = require('jquery');
 
-$(function() {
-  return alert('hi');
-});
-
 
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
