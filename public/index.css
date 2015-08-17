@@ -2,6 +2,11 @@
   background: #c44;
   height: 350px;
   position: relative;
+  background-image: url("./images/Banner_3.jpg");
+  background-position: center;
+  -webkit-background-size: 526px;
+  -moz-background-size: 526px;
+  background-size: 526px;
 }
 .header nav {
   width: 100%;
@@ -28,7 +33,8 @@
 }
 .header-text {
   margin: 20px;
-  font-size: 21px;
+  font-size: 17px;
+  line-height: 1.5;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
