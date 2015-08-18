@@ -21,14 +21,21 @@
 }
 .header-language-toggle {
   float: right;
-  margin: 15px;
+  margin: 0 15px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .header-chinese {
-  width: 40px;
-  height: 30px;
-  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
   display: inline-block;
-  margin-left: 16px;
+  font-size: 20px;
+  margin-left: 10px;
 }
 .header-text {
   margin: 20px;
