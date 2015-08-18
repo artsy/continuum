@@ -96,6 +96,57 @@ footer.footer {
   border-top: 1px solid #ccc;
   display: none;
 }
+.vertical-rectangle {
+  width: 100%;
+  height: 205px;
+}
+.small-rectangle {
+  width: 100%;
+  height: 135px;
+}
+.section-two-content {
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+  display: none;
+}
+.section-two-content h2 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.section-two-content .italicize {
+  font-style: italic;
+}
+.section-two-content p {
+  line-height: 1.5;
+  font-size: 13px;
+}
+.columns {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+.column-one > div,
+.column-two > div {
+  margin-bottom: 40px;
+}
+.column-one {
+  padding-bottom: 40px;
+}
+.column-two {
+  padding-top: 55px;
+}
+.claude-monet-container,
+.zhan-wang-container,
+.jeff-koons-container,
+.ding-yi-container {
+  width: 100%;
+}
+.section-two-text {
+  margin-bottom: 40px;
+}
+.section-two-text p {
+  font-size: 16px;
+}
 html,
 body,
 div,
