@@ -77,35 +77,43 @@ footer.footer {
   text-decoration: none;
   color: #000;
 }
-.main-content-container {
+.body-content-container {
   padding-top: 20px;
 }
 .main-side-margin {
   margin: 0 20px;
 }
-.section-title {
+.body-section-title {
   border-top: 1px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'ITC Avant Garde Gothic W04', 'AvantGardeGothicITCW01D 731075', 'AvantGardeGothicITCW01Dm', 'Helvetica', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
 }
 .last-border {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
-.section-one-content img,
-.section-three-content img,
-.section-four-content img {
+.body-section-one-content img,
+.body-section-three-content img,
+.body-section-four-content img {
   width: 100%;
   margin-bottom: 15px;
   border-top: 1px solid #ccc;
   padding-top: 40px;
 }
-.section-one-content {
-  padding-top: 40px;
+.body-section-one-content {
   margin-bottom: 60px;
   line-height: 1.5;
-  border-top: 1px solid #ccc;
   display: none;
+  font-family: 'ITC Avant Garde Gothic W04', 'AvantGardeGothicITCW01D 731075', 'AvantGardeGothicITCW01Dm', 'Helvetica', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 .vertical-rectangle {
   width: 100%;
@@ -115,19 +123,19 @@ footer.footer {
   width: 100%;
   height: 135px;
 }
-.section-two-content {
+.body-section-two-content {
   border-top: 1px solid #ccc;
   padding-top: 40px;
   display: none;
 }
-.section-two-content h2 {
+.body-section-two-content h2 {
   font-weight: bold;
   margin-top: 15px;
 }
-.section-two-content .italicize {
+.body-section-two-content .italicize {
   font-style: italic;
 }
-.section-two-content p {
+.body-section-two-content p {
   line-height: 1.5;
   font-size: 13px;
 }
@@ -158,8 +166,8 @@ footer.footer {
 .section-two-text p {
   font-size: 16px;
 }
-.section-three-content p,
-.section-four-content p {
+.body-section-three-content p,
+.body-section-four-content p {
   margin-bottom: 60px;
   line-height: 1.5;
 }
@@ -169,6 +177,10 @@ footer.footer {
   background-color: #000;
   color: #fff;
   border: none;
+  font-family: 'ITC Avant Garde Gothic W04', 'AvantGardeGothicITCW01D 731075', 'AvantGardeGothicITCW01Dm', 'Helvetica', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 17px;
   margin-bottom: 40px;
 }
