@@ -171,8 +171,14 @@ footer.footer {
   margin-bottom: 60px;
   line-height: 1.5;
 }
-.launch-app-store {
-  width: 205px;
+.body-section-sub-header1 {
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.avant-garde-button-black {
+  width: 200px;
   height: 50px;
   background-color: #000;
   color: #fff;
@@ -182,6 +188,15 @@ footer.footer {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 17px;
+}
+.link-artsy-galleries {
+  margin-top: 40px;
+}
+.body-section-sub-header2 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.format-spacing {
   margin-bottom: 40px;
 }
 html,
