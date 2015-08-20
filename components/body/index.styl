@@ -8,14 +8,12 @@
 
 .body-section-title
   border-top 1px solid gray-color
-  padding-top 20px
-  padding-bottom 20px
+  padding 20px 0
   avant-garde('l-headline', true)
   font-size 17px
 
-.last-border
-  border-bottom 1px solid gray-color
-  padding-bottom 20px
+.margin-bottom
+  margin-bottom 40px
 
 .body-section-one-content img, .body-section-three-content img, .body-section-four-content img
   width 100%
@@ -23,12 +21,13 @@
   border-top 1px solid gray-color
   padding-top 40px
 
-.body-section-one-content
-  margin-bottom 60px
+.body-section-one-content, .body-section-three-content, .body-section-four-content
   line-height 1.5
   display none
   avant-garde('m-headline', true)
   font-size 15px
+  &:not(.body-section-four-content)
+    margin-bottom 60px
 
 .vertical-rectangle
   width 100%
@@ -40,7 +39,7 @@
 
 .body-section-two-content
   border-top 1px solid gray-color
-  padding-top 40px
+  padding 40px 0 20px 0
   display none
   h2
     font-weight bold
@@ -69,19 +68,8 @@
 
 .section-two-text
   margin-bottom 40px
-
-.section-two-text  p
-  font-size 16px
-
-.body-section-three-content p, .body-section-four-content p
-  margin-bottom 60px
-  line-height 1.5
-
-.body-section-sub-header1
-  border-top 1px solid gray-color
-  padding-top 40px
-  margin-bottom 20px
-  font-weight bold
+  p
+    font-size 16px
 
 .avant-garde-button-black
   width 200px
@@ -91,14 +79,20 @@
   border none
   avant-garde('l-headline', true)
   font-size 17px
-  // margin-bottom 40px
-
-.link-artsy-galleries
-  margin-top 40px
-
-.body-section-sub-header2
-  font-weight bold
   margin-top 20px
+  &:not(.mailto-partners)
+    margin-bottom 40px
+
+.body-section-sub-header
+  font-weight bold
+  margin-bottom 20px
+  padding-top 20px
+
+.body-section-five
+  border-top 1px solid gray-color
 
 .format-spacing
-  margin-bottom 40px
+  padding-bottom 20px
+
+.body-section-five-content
+  display none
