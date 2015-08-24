@@ -1,54 +1,19 @@
 $ = require 'jquery'
 
 $ ->
-#   alert 'hi'
-  $sectionOne = $('#body-first-section')
-  $sectionTwo = $('#body-second-section')
-  $sectionThree = $('#body-third-section')
-  $sectionFourth = $('#body-fourth-section')
-  $sectionFifth = $('#body-fifth-section')
 
-  $sectionOne.click (e) ->
+  # target clicked, callback -> close all sections then slideDown clicked element
+  $('.js-display-content').click (e) ->
     e.preventDefault()
-    # console.log($sectionOne)
-    $('.body-section-one-content').slideDown('slow')
-    $('.body-section-two-content').css('display', 'none')
-    $('.body-section-three-content').css('display', 'none')
-    $('.body-section-four-content').css('display', 'none')
-    $('.body-section-five-content').css('display', 'none')
+    $('.js-section-content').css('display', 'none')
+    $(this).siblings('.js-section-content').slideDown('slow')
 
-  $sectionTwo.click (e) ->
-    e.preventDefault()
-    # console.log($sectionOne)
-    $('.body-section-two-content').slideDown('slow')
-    $('.body-section-one-content').css('display', 'none')
-    $('.body-section-three-content').css('display', 'none')
-    $('.body-section-four-content').css('display', 'none')
-    $('.body-section-five-content').css('display', 'none')
+  slideSwitch = ->
+    $active = $('figure.carousel-track__image  .slideshow-is-active')
 
-  $sectionThree.click (e) ->
-    e.preventDefault()
-    # console.log($sectionOne)
-    $('.body-section-three-content').slideDown('slow')
-    $('.body-section-two-content').css('display', 'none')
-    $('.body-section-one-content').css('display', 'none')
-    $('.body-section-four-content').css('display', 'none')
-    $('.body-section-five-content').css('display', 'none')
+    $next = if $active.next().length then $active.next() else $('figure.carousel-track__image img:first')
 
-  $sectionFourth.click (e) ->
-    e.preventDefault()
-    # console.log($sectionOne)
-    $('.body-section-four-content').slideDown('slow')
-    $('.body-section-two-content').css('display', 'none')
-    $('.body-section-three-content').css('display', 'none')
-    $('.body-section-one-content').css('display', 'none')
-    $('.body-section-five-content').css('display', 'none')
+    $next.addClass('slideshow-is-active')
+    $active.removeClass('slideshow-is-active')
 
-  $sectionFifth.click (e) ->
-    e.preventDefault()
-    # console.log($sectionOne)
-    $('.body-section-five-content').slideDown('slow')
-    $('.body-section-two-content').css('display', 'none')
-    $('.body-section-three-content').css('display', 'none')
-    $('.body-section-one-content').css('display', 'none')
-    $('.body-section-four-content').css('display', 'none')
+  setInterval( slideSwitch, 2000)

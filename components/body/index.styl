@@ -15,11 +15,30 @@
 .margin-bottom
   margin-bottom 40px
 
-.body-section-one-content img, .body-section-three-content img, .body-section-four-content img
+.body-section-three-content img, .body-section-four-content img
+  // .body-section-one-content img,
   width 100%
   margin-bottom 15px
   border-top 1px solid gray-color
   padding-top 40px
+
+figure.carousel-track__image
+  width 100%
+  margin auto 0px 15px 0px
+  border-top 1px solid gray-color
+  padding-top 40px
+  position relative
+  height 223px
+
+figure.carousel-track__image img
+  display none
+  width 100%
+  position absolute
+  z-index 8
+
+figure.carousel-track__image  .slideshow-is-active
+  display block
+  z-index 10
 
 .body-section-one-content, .body-section-three-content, .body-section-four-content
   line-height 1.5
@@ -98,3 +117,6 @@
   display none
   p
     line-height 1.5
+
+.image-caption-format
+  margin-bottom 40px

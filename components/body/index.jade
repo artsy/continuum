@@ -1,15 +1,20 @@
 .body-content-container.main-side-margin
   .section-one
-    a#body-first-section
+    a#body-first-section.js-display-content
       h1.body-section-title 純文字連結
-    .body-section-one-content
-      img(src='./images/Body_1_1.jpg')
-      p Musée du Louvre
+    .body-section-one-content.js-section-content
+      figure.carousel-track__image
+        img.slideshow-is-active(src='./images/Body_1_1.jpg')
+        img(src='./images/Banner_1.jpg')
+        img(src='./images/Banner_2.jpg')
+        img(src='./images/Banner_3.jpg')
+      p 畫廊
+      p.image-caption-format Musée du Louvre
       p Artsy 薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。
   .section-two
-    a#body-second-section
+    a#body-second-section.js-display-content
       h1.body-section-title Artsy藝術世界
-    .body-section-two-content
+    .body-section-two-content.js-section-content
       .columns
         .column-one
           .claude-monet-container
@@ -43,29 +48,29 @@
       .section-two-text
         p 目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。
   .section-three
-    a#body-third-section
+    a#body-third-section.js-display-content
       h1.body-section-title Artsy收藏藝術
-    .body-section-three-content
+    .body-section-three-content.js-section-content
       img(src='./images/Body_3.jpg')
       p 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
   .section-four
-    a#body-fourth-section
+    a#body-fourth-section.js-display-content
       h1.body-section-title 藝術基因鑑定
-    .body-section-four-content.margin-bottom
+    .body-section-four-content.margin-bottom.js-section-content
       img(src='./images/Body_4.jpg')
       p.format-spacing Artsy iOS app專為iPhone和iPad設計，讓你隨時隨地瀏覽藝術，了解藝術，儲存圖片，購藏作品。你更可按自己的喜好設定，讓它成為你的地道指南，帶你走遍每個Artsy專題重點藝術博覽會。請掃描QR code直接下載 或在App Store搜尋「Artsy」。
       button.avant-garde-button-black.launch-app-store 盡在掌中
   .section-five
-    a#body-fifth-section
+    a#body-fifth-section.js-display-content
       h1.body-section-title.last-border Artsy夥伴加盟
     .body-section-five
-      .body-section-five-content
-        p.body-section-sub-header 畫廊夥伴
-        p.format-spacing 銷，畫廊夥伴可使用Artsy系統工具管理專頁，上載圖片和其他資訊，支援畫廊運作。系統工具包括雲端內容管理系統（CMS）、iPad及iPhone應用程式。Artsy畫廊夥伴加盟計劃僅供獲邀請客戶專享，月費價錢相宜，簡單清晰，絕無其他隱藏收費。
-        button.avant-garde-button-black.link-artsy-galleries 加盟詳情
-        p.body-section-sub-header 申請加盟
-        p.format-spacing 機構夥伴可在Artsy獨享機構專頁，宣傳展覽、藏品及節目，並可透過Artsy電子商業平台出售限量版藝術品。
-        button.avant-garde-button-black.link-artsy-institutions 加盟詳情
-        p.body-section-sub-header 申請加盟
-        p.format-spacing Artsy歡迎精選慈善拍賣及商業拍賣行加盟。
-        button.avant-garde-button-black.mailto-partners 拍賣夥伴
+    .body-section-five-content.js-section-content
+      p.body-section-sub-header 畫廊夥伴
+      p.format-spacing 銷，畫廊夥伴可使用Artsy系統工具管理專頁，上載圖片和其他資訊，支援畫廊運作。系統工具包括雲端內容管理系統（CMS）、iPad及iPhone應用程式。Artsy畫廊夥伴加盟計劃僅供獲邀請客戶專享，月費價錢相宜，簡單清晰，絕無其他隱藏收費。
+      button.avant-garde-button-black.link-artsy-galleries 加盟詳情
+      p.body-section-sub-header 申請加盟
+      p.format-spacing 機構夥伴可在Artsy獨享機構專頁，宣傳展覽、藏品及節目，並可透過Artsy電子商業平台出售限量版藝術品。
+      button.avant-garde-button-black.link-artsy-institutions 加盟詳情
+      p.body-section-sub-header 申請加盟
+      p.format-spacing Artsy歡迎精選慈善拍賣及商業拍賣行加盟。
+      button.avant-garde-button-black.mailto-partners 拍賣夥伴
