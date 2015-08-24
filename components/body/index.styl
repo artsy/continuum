@@ -1,30 +1,52 @@
-.main-content-container
+@import '../stylus_lib'
+
+.body-content-container
   padding-top 20px
 
 .main-side-margin
   margin 0 20px
 
-.section-title
-  border-top 1px solid #CCC
-  padding-top 20px
-  padding-bottom 20px
+.body-section-title
+  border-top 1px solid gray-color
+  padding 20px 0
+  avant-garde('l-headline', true)
+  font-size 17px
 
-.last-border
-  border-bottom 1px solid #CCC
-  padding-bottom 20px
+.margin-bottom
+  margin-bottom 40px
 
-.section-one-content img, .section-three-content img, .section-four-content img
+.body-section-three-content img, .body-section-four-content img
+  // .body-section-one-content img,
   width 100%
   margin-bottom 15px
-  border-top 1px solid #CCC
+  border-top 1px solid gray-color
   padding-top 40px
 
-.section-one-content
+figure.carousel-track__image
+  width 100%
+  margin auto 0px 15px 0px
+  border-top 1px solid gray-color
   padding-top 40px
-  margin-bottom 60px
-  line-height 1.5
-  border-top 1px solid #CCC
+  position relative
+  height 223px
+
+figure.carousel-track__image img
   display none
+  width 100%
+  position absolute
+  z-index 8
+
+figure.carousel-track__image  .slideshow-is-active
+  display block
+  z-index 10
+
+.body-section-one-content, .body-section-three-content, .body-section-four-content
+  line-height 1.5
+  display none
+  avant-garde('m-headline', true)
+  font-size 15px
+  &:not(.body-section-four-content)
+    margin-bottom 60px
 
 .vertical-rectangle
   width 100%
@@ -34,9 +56,9 @@
   width 100%
   height 135px
 
-.section-two-content
-  border-top 1px solid #CCC
-  padding-top 40px
+.body-section-two-content
+  border-top 1px solid gray-color
+  padding 40px 0 20px 0
   display none
   h2
     font-weight bold
@@ -45,7 +67,7 @@
     font-style italic
   p
     line-height 1.5
-    font-size 13px
+    font-size 13px // switch to garamond
 .columns
   -webkit-columns 2
   -moz-columns: 2
@@ -65,22 +87,36 @@
 
 .section-two-text
   margin-bottom 40px
+  p
+    font-size 16px
 
-.section-two-text  p
-  font-size 16px
-
-.section-three-content p, .section-four-content p
-  margin-bottom 60px
-  line-height 1.5
-
-// .section-three-content
-  // display none
-
-.launch-app-store
-  width 205px
+.avant-garde-button-black
+  width 200px
   height 50px
   background-color #000
   color #fff
   border none
+  avant-garde('l-headline', true)
   font-size 17px
+  margin-top 20px
+  &:not(.mailto-partners)
+    margin-bottom 40px
+
+.body-section-sub-header
+  font-weight bold
+  margin-bottom 20px
+  padding-top 20px
+
+.body-section-five
+  border-top 1px solid gray-color
+
+.format-spacing
+  padding-bottom 20px
+
+.body-section-five-content
+  display none
+  p
+    line-height 1.5
+
+.image-caption-format
   margin-bottom 40px
