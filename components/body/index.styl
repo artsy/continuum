@@ -1,4 +1,5 @@
 @import '../stylus_lib'
+// @import '../layout/index'
 
 .body-content-container
   padding-top 20px
@@ -22,21 +23,44 @@
   border-top 1px solid gray-color
   padding-top 40px
 
-figure.carousel-track__image
-  width 100%
-  margin auto 0px 15px 0px
-  border-top 1px solid gray-color
-  padding-top 40px
-  position relative
-  height 223px
+// figure.carousel-track__image
+//   width 100%
+//   margin auto 0px 15px 0px
+//   border-top 1px solid gray-color
+//   padding-top 40px
+//   position relative
+//   height 223px
 
-figure.carousel-track__image img
+// figure.carousel-track__image img
+//   display none
+//   width 100%
+//   position absolute
+//   z-index 8
+
+// figure.carousel-track__image  .slideshow-is-active
+//   display block
+//   z-index 10
+
+
+//----------------
+.carousel-track__image
+  border-top 1px solid gray-color
+  width 100%
+  padding-top 40px
+  height 255px
+  position relative
+
+figure.slide-images
   display none
   width 100%
   position absolute
   z-index 8
+  margin 0px
 
-figure.carousel-track__image  .slideshow-is-active
+figure.slide-images img
+  width 100%
+
+.carousel-track__image .slideshow-is-active
   display block
   z-index 10
 
@@ -90,17 +114,8 @@ figure.carousel-track__image  .slideshow-is-active
   p
     font-size 16px
 
-.avant-garde-button-black
-  width 200px
-  height 50px
-  background-color #000
-  color #fff
-  border none
-  avant-garde('l-headline', true)
-  font-size 17px
-  margin-top 20px
-  &:not(.mailto-partners)
-    margin-bottom 40px
+.avant-garde-button-black:not(.mailto-partners)
+  margin-bottom 40px
 
 .body-section-sub-header
   font-weight bold

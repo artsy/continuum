@@ -3,12 +3,19 @@
     a#body-first-section.js-display-content
       h1.body-section-title 純文字連結
     .body-section-one-content.js-section-content
-      figure.carousel-track__image
-        img.slideshow-is-active(src='./images/Body_1_1.jpg')
-        img(src='./images/Banner_1.jpg')
-        img(src='./images/Banner_2.jpg')
-        img(src='./images/Banner_3.jpg')
-      p 畫廊
+      .carousel-track__image
+        figure.art-fairs-image.slide-images.slideshow-is-active
+          img(src='./images/Body_1_1.jpg')
+          figcaption 畫廊
+        figure.galleries-image.slide-images
+          img(src='./images/Banner_1.jpg')
+          figcaption 藝術館
+        figure.auctions-image.slide-images
+          img(src='./images/Banner_2.jpg')
+          figcaption 藝術博覽會
+        figure.auctions-museum.slide-images
+          img(src='./images/Banner_3.jpg')
+          figcaption 拍賣會
       p.image-caption-format Musée du Louvre
       p Artsy 薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。
   .section-two

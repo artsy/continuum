@@ -8,10 +8,18 @@ $ ->
     $('.js-section-content').css('display', 'none')
     $(this).siblings('.js-section-content').slideDown('slow')
 
-  slideSwitch = ->
-    $active = $('figure.carousel-track__image  .slideshow-is-active')
+  # slideSwitch = ->
+  #   $active = $('figure.carousel-track__image  .slideshow-is-active')
 
-    $next = if $active.next().length then $active.next() else $('figure.carousel-track__image img:first')
+    # $next = if $active.next().length then $active.next() else $('figure.carousel-track__image img:first')
+
+  #   $next.addClass('slideshow-is-active')
+  #   $active.removeClass('slideshow-is-active')
+
+  slideSwitch = ->
+    $active = $('.carousel-track__image  .slideshow-is-active')
+    # $next = $active.next()
+    $next = if $active.next().length then $active.next() else $('.carousel-track__image .slide-images:first')
 
     $next.addClass('slideshow-is-active')
     $active.removeClass('slideshow-is-active')
