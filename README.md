@@ -4,5 +4,5 @@ The Chinese splash page.
 ## Getting Started
 
 * npm install
-* npm run watch
-* upload /public to S3
+* npm start
+* TODO: `npm build` + upload /public to S3

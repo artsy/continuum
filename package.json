@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "css": "stylus components/layout/index.styl --out public/",
-    "html": "jade components/layout/index.jade --out public/",
-    "js": "browserify --transform coffeeify components/layout/index.coffee -o public/index.js",
-    "build": "npm run css & npm run html & npm run js",
-    "watch": "nodemon --watch components --ext styl,jade,coffee --exec 'npm run build'"
+    "css": "stylus --watch components/layout/index.styl --out public/",
+    "html": "jade --watch components/layout/index.jade --out public/",
+    "js": "watchify --transform coffeeify components/layout/index.coffee -o public/index.js",
+    "build": "echo 'TBD: Minify, gzip, and all that good stuff'",
+    "watch": "npm run css & npm run js & npm run html",
+    "browsersync": "browser-sync start --files \"**/*.coffee,**/*.jade,**/*.styl\" --server public --reload-delay 1000",
+    "start": "npm run watch & npm run browsersync"
+
   },
   "repository": {
     "type": "git",
@@ -28,13 +31,14 @@
   },
   "homepage": "https://github.com/artsy/continuum#readme",
   "dependencies": {
+    "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "coffee-script": "^1.9.3",
     "coffeeify": "^1.1.0",
     "jade": "^1.11.0",
     "jquery": "^2.1.4",
     "nib": "^1.1.0",
-    "nodemon": "^1.4.1",
-    "stylus": "^0.52.0"
+    "stylus": "^0.52.0",
+    "watchify": "^3.3.1"
   }
 }
