@@ -2,19 +2,19 @@
   .section-one
     a#body-first-section.js-display-content
       h1.body-section-title 純文字連結
-    .body-section-one-content.js-section-content
+    .body-section-content.js-section-content
       .carousel-track__image
         include ../carousel/carousel.jade
         +carousel-figure('./images/Body_1_1.jpg', '畫廊')(class='slide-images slideshow-is-active')
         +carousel-figure('./images/Banner_1.jpg', '藝術館')(class='slide-images')
         +carousel-figure('./images/Banner_2.jpg', '藝術博覽會')(class='slide-images')
         +carousel-figure('./images/Banner_3.jpg', '拍賣會')(class='slide-images')
-      p.image-caption-format Musée du Louvre
+      //- p.image-caption-format Musée du Louvre
       p Artsy 薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。
   .section-two
     a#body-second-section.js-display-content
       h1.body-section-title Artsy藝術世界
-    .body-section-two-content.js-section-content
+    .body-section-content.body-section-content__section-two.js-section-content
       .columns
         .column-one
           include ./mixins/artist-container.jade
@@ -32,13 +32,13 @@
   .section-three
     a#body-third-section.js-display-content
       h1.body-section-title Artsy收藏藝術
-    .body-section-three-content.js-section-content
+    .body-section-content.js-section-content
       img(src='./images/Body_3.jpg')
       p 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
   .section-four
     a#body-fourth-section.js-display-content
       h1.body-section-title 藝術基因鑑定
-    .body-section-four-content.margin-bottom.js-section-content
+    .body-section-content.margin-bottom.js-section-content
       img(src='./images/Body_4.jpg')
       p.format-spacing Artsy iOS app專為iPhone和iPad設計，讓你隨時隨地瀏覽藝術，了解藝術，儲存圖片，購藏作品。你更可按自己的喜好設定，讓它成為你的地道指南，帶你走遍每個Artsy專題重點藝術博覽會。請掃描QR code直接下載 或在App Store搜尋「Artsy」。
       button.avant-garde-button-black.launch-app-store 盡在掌中
