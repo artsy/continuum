@@ -1,4 +1,5 @@
 $ = require 'jquery'
+{ initSlideShow } = require '../carousel/index.coffee'
 
 $ ->
 
@@ -16,12 +17,4 @@ $ ->
   #   $next.addClass('slideshow-is-active')
   #   $active.removeClass('slideshow-is-active')
 
-  slideSwitch = ->
-    $active = $('.carousel-track__image  .slideshow-is-active')
-    # $next = $active.next()
-    $next = if $active.next().length then $active.next() else $('.carousel-track__image .slide-images:first')
-
-    $next.addClass('slideshow-is-active')
-    $active.removeClass('slideshow-is-active')
-
-  setInterval( slideSwitch, 2000)
+  initSlideShow()
