@@ -17,34 +17,16 @@
     .body-section-two-content.js-section-content
       .columns
         .column-one
-          .claude-monet-container
-            img.small-rectangle(src='./images/Body_2.1.jpg')
-            .claude-monet-text
-              h2 Claude Monet
-              p #[span.italicize Le Parlement, soleil couchant (The House of Parliament, at Sunset),]
-              p 1900-1901,
-              p Christie's
-          .jeff-koons-container
-            img.vertical-rectangle(src='./images/Body_2.3.jpg')
-            .jeff-koons-text
-              h2 Jeff Koons
-              p #[span.italicize Metallic Venus,]
-              p 2010-2012
-              p Gagosian Gallery
+          include ./mixins/artist-container.jade
+          - options = {path: './images/Body_2.1.jpg', artistName: 'Claude Monet', artwork: 'Le Parlement, soleil couchant (The House of Parliament, at Sunset),', artworkDate: '1900-1901,', location: 'Christie\'s', className: 'small-rectangle'}
+          +artist-container(options)
+          - options = {path: './images/Body_2.3.jpg', artistName: 'Jeff Koons', artwork: 'Metallic Venus,', artworkDate: '2010-2012,', location: 'Gagosian Gallery', className: 'vertical-rectangle'}
+          +artist-container(options)
         .column-two
-          .zhan-wang-container
-            img.vertical-rectangle(src='./images/Body_2.2.jpg')
-            .zhan-wang-text
-              h2 Zhan Wang
-              p Artificial Rock #96,
-              p 2006 Long March Space
-          .ding-yi-container
-            img.small-rectangle(src='./images/Body_2.4.jpg')
-            .ding-yi-text
-              h2 Ding Yi
-              p #[span.italicize Appearance of Crosses]
-              p 2013-11, 2013
-              p ShanghART
+          - options = {path: './images/Body_2.2.jpg', artistName: 'Zhan Wang', artwork: 'Artificial Rock #96,', artworkDate: '2006 Long March Space', className: 'vertical-rectangle'}
+          +artist-container(options)
+          - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
+          +artist-container(options)
       .section-two-text
         p 目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。
   .section-three
