@@ -9,12 +9,4 @@ $ ->
     $('.js-section-content').css('display', 'none')
     $(this).siblings('.js-section-content').slideDown('slow')
 
-  # slideSwitch = ->
-  #   $active = $('figure.carousel-track__image  .slideshow-is-active')
-
-    # $next = if $active.next().length then $active.next() else $('figure.carousel-track__image img:first')
-
-  #   $next.addClass('slideshow-is-active')
-  #   $active.removeClass('slideshow-is-active')
-
   initSlideShow()
