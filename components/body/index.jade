@@ -1,8 +1,8 @@
 .body-content-container.main-side-margin
   .section-one
-    a#body-first-section.js-display-content
+    a#body-first-section.js-display-content.is-mobile
       h1.body-section-title 純文字連結
-    .body-section-content.js-section-content
+    #section1.body-section-content.js-section-content
       .carousel-track__image
         include ../carousel/carousel.jade
         +carousel-figure('./images/Body_1_1.jpg', '畫廊')(class='slide-images slideshow-is-active')
@@ -10,9 +10,11 @@
         +carousel-figure('./images/Banner_2.jpg', '藝術博覽會')(class='slide-images')
         +carousel-figure('./images/Banner_3.jpg', '拍賣會')(class='slide-images')
       //- p.image-caption-format Musée du Louvre
-      p Artsy 薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。
+      .section1-text
+        h1.body-section-title.is-desktop 純文字連結
+        p Artsy 薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。
   .section-two
-    a#body-second-section.js-display-content
+    a#body-second-section.js-display-content.is-mobile
       h1.body-section-title Artsy藝術世界
     .body-section-content.body-section-content__section-two.js-section-content
       .columns
@@ -28,13 +30,16 @@
           - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
           +artist-container(options)
       .section-two-text
+        h1.body-section-title.is-desktop Artsy藝術世界
         p 目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。
   .section-three
-    a#body-third-section.js-display-content
+    a#body-third-section.js-display-content.is-mobile
       h1.body-section-title Artsy收藏藝術
     .body-section-content.js-section-content
-      img(src='./images/Body_3.jpg')
-      p 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
+      .section-three-image-container
+        h1.body-section-title.is-desktop Artsy收藏藝術
+        img(src='./images/Body_3.jpg')
+      p.section-three-text 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
   .section-four
     a#body-fourth-section.js-display-content
       h1.body-section-title 藝術基因鑑定
