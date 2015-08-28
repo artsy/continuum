@@ -1,4 +1,4 @@
 mixin carousel-figure(path, caption)
   figure(class!=attributes.class)
-    img(src=path)
+    .carousel-figure-img(style="background-image: url(#{path})")
     figcaption= caption
