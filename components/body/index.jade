@@ -30,17 +30,18 @@
           - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
           +artist-container(options)
       .section-two-text
-        h1.body-section-title.is-desktop Artsy藝術世界
-        p 目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。
+        .section-two-text-container
+          h1.body-section-title.is-desktop Artsy藝術世界
+          p 目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。
   .section-three
     a#body-third-section.js-display-content.is-mobile
       h1.body-section-title Artsy收藏藝術
     .body-section-content.js-section-content
-      .section-three-image-container
+      img(src='./images/Body_3.jpg')
+      .section-three-text-container
         h1.body-section-title.is-desktop Artsy收藏藝術
-        img(src='./images/Body_3.jpg')
-      p.section-three-text 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
-  .section-four
+        p.section-three-text 「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。
+  .section-four.is-mobile
     a#body-fourth-section.js-display-content
       h1.body-section-title 藝術基因鑑定
     .body-section-content.margin-bottom.js-section-content
@@ -48,10 +49,11 @@
       p.format-spacing Artsy iOS app專為iPhone和iPad設計，讓你隨時隨地瀏覽藝術，了解藝術，儲存圖片，購藏作品。你更可按自己的喜好設定，讓它成為你的地道指南，帶你走遍每個Artsy專題重點藝術博覽會。請掃描QR code直接下載 或在App Store搜尋「Artsy」。
       button.avant-garde-button-black.launch-app-store 盡在掌中
   .section-five
-    a#body-fifth-section.js-display-content
+    a#body-fifth-section.js-display-content.is-mobile
       h1.body-section-title.last-border Artsy夥伴加盟
-    .body-section-five
+    .body-section-five.is-mobile
     .body-section-five-content.js-section-content
+      h1.body-section-title.last-border.is-desktop Artsy夥伴加盟
       p.body-section-sub-header 畫廊夥伴
       p.format-spacing 銷，畫廊夥伴可使用Artsy系統工具管理專頁，上載圖片和其他資訊，支援畫廊運作。系統工具包括雲端內容管理系統（CMS）、iPad及iPhone應用程式。Artsy畫廊夥伴加盟計劃僅供獲邀請客戶專享，月費價錢相宜，簡單清晰，絕無其他隱藏收費。
       button.avant-garde-button-black.link-artsy-galleries 加盟詳情

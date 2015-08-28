@@ -2,74 +2,85 @@
   .main-side-margin
     margin 0 170px
 
-  #section1.body-section-content
+  .body-content-container
+    padding-top 0px
+
+  #section1.body-section-content, .section-three .body-section-content, .section-four .body-section-content
     display flex
     -webkit-flex-direction row
     flex-direction row
 
-  .body-section-content
+  .body-section-five-content
+    display block
+
+  .section-two .body-section-content
     display flex
     flex-direction row-reverse
-    margin-top 140px
 
   .carousel-track__image
-    // border-top 1px solid gray-color
     width 50%
-    // padding-top 40px
-    height 400px
-    position relative
 
   figure.slide-images
     display none
     width 100%
-    position absolute
-    z-index 8
     margin 0px
 
   figure.slide-images img
-    width 530px
-    height 354px
+    width 100%
 
   .carousel-track__image .slideshow-is-active
     display block
-    z-index 10
     figcaption
       font-size 20px
 
+  .section-one .body-section-content img
+    padding-top 0px
+    max-height 566px
+
+  .body-section-content img
+    max-height 400px
+
   .body-section-content h1.is-desktop
     display block
-    padding-top 40px
+    padding-top 0px
     padding-bottom 30px
     text-align center
-    font-size 26px
+    font-size 24px
     font-weight bolder
 
   .body-section-content p
-    font-size 24px
+    font-size 22px
     font-weight 100
     line-height 1.5
 
   .is-mobile
     display none
 
-  .section-one
-    margin-top 100px
+  .section-one, .section-two
+    margin-top 200px
+  .section-three
+    margin-top 200px
 
   .body-section-title
-  // #section1
   .body-section-content
     border-top-style none
 
   .columns
   .section1-text
-  .section-three-image-container
+  .section-three-text-container
     padding-left 35px
     width 50%
   .section-two-text
   .carousel-track__image
-  p.section-three-text
+  .section-three img
     padding-right 35px
     width 50%
+
+  .section-three img
+    padding-top 0px
+
+  .columns
+    margin-bottom 0px
 
   .columns p
     font-size: 17px;
@@ -82,5 +93,17 @@
   .column-one
     margin-right 10px
   .column-two
-    margin-top 100px
+    padding-top 150px
     margin-left 10px
+
+  .column-one img
+    padding-top 0
+
+  .column-two
+    maigin-top 0px
+
+  .section-two-text-container
+    position relative
+    top 50%
+    transform translateY(130%)
+
