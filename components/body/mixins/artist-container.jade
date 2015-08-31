@@ -1,0 +1,8 @@
+mixin artist-container(options)
+  .artist-container
+    img(src= options.path, class=options.className)
+    .artist-text
+      h2= options.artistName
+      p #[span.italicize #{options.artwork}]
+      p= options.artworkDate
+      p= options.location

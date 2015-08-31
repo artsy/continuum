@@ -9,6 +9,7 @@
     "html": "jade --watch components/layout/index.jade --out public/",
     "js": "watchify --transform coffeeify components/layout/index.coffee -o public/index.js",
     "build": "echo 'TBD: Minify, gzip, and all that good stuff'",
+    "images": "for f in images/*.jpg; do convert -strip -interlace Plane -quality 70% -resize 1000x1000 \"$f\" public/\"$f\"; done",
     "watch": "npm run css & npm run js & npm run html",
     "browsersync": "browser-sync start --files \"**/*.coffee,**/*.jade,**/*.styl\" --server public --reload-delay 1000",
     "start": "npm run watch & npm run browsersync"
