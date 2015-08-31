@@ -1,2 +1,25 @@
 @media (min-device-width 1200px)
-  height 700px
+  .header
+    height 800px
+    background-size 1516px
+
+  .header-text
+    margin 0 100px
+    h1
+      font-size 36px
+
+  .is-header-desktop
+    display block
+    text-align center
+    position absolute
+    bottom 130px
+    transform translateX(20%)
+
+  .section-nav.is-header-desktop p
+    display inline-block
+    margin-left 40px
+    padding-right 40px
+    border-right 1px solid white
+    color white
+    &:last-child
+      border-right-style none
