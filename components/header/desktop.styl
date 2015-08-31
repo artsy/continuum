@@ -1,21 +1,44 @@
 @media (min-device-width 1200px)
   .header
     height 800px
-    background-size 1516px
+    background-size 1380px
+    .visit-artsy.is-desktop-header-icon
+      float left
+      display inline-block
+      p
+        vertical-align top
+        color white
+        text-transform uppercase
+    .header-language-toggle
+      float right
+
+  .nav-icons
+    margin-right 15px
+
+  .header svg
+    padding 0px
+    margin 10px 0 10px 30px
+
+  .nav-icons
+    position: relative;
+    top: 50%;
+    transform translateY(-50%)
+    float right
+    height 20px
 
   .header-text
     margin 0 100px
     h1
       font-size 36px
 
-  .is-header-desktop
+  .section-nav.is-desktop-header
     display block
     text-align center
     position absolute
     bottom 130px
     transform translateX(20%)
 
-  .section-nav.is-header-desktop p
+  .section-nav.is-desktop-header p
     display inline-block
     margin-left 40px
     padding-right 40px
