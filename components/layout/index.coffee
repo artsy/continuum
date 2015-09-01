@@ -10,8 +10,7 @@ footerData = require('../footer/data.coffee')
 DEFAULT_LANGUAGE = 'traditional'
 
 $ ->
-  # console.log headerData
-  console.log bodyData.intro
+
   render = (language) ->
     $('header').html headerTemplate
       copy: headerData
@@ -26,6 +25,14 @@ $ ->
       language: language
 
   render(DEFAULT_LANGUAGE)
+
+  toggleLanguageOnClick = (e) ->
+    console.log this
+    language = $(e.currentTarget).data('language')
+    render(language)
+
+  $('body').on 'click', '.header-language-toggle a', toggleLanguageOnClick
+
 
   initSlideShow()
   initExpandContent()

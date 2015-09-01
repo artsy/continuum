@@ -4,8 +4,8 @@ nav
     .visit-artsy.is-desktop-header-icon
       p visit artsy.net
     .header-language-toggle
-        p.header-chinese 繁
-        p.header-chinese 體
+        a.header-chinese(data-language='simplified') 繁
+        a.header-chinese(data-language='traditional') 體
 div.header-text
   h1= copy.header.headline[language]
   h1= copy.header.subHeadline[language]
