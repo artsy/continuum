@@ -2,6 +2,7 @@ $ = require 'jquery'
 
 module.exports =
   initSlideShow: ->
+    $('.carousel-track__image .slide-images:first-child').addClass('slideshow-is-active')
 
     slideSwitch = ->
       $active = $('.carousel-track__image  .slideshow-is-active')
