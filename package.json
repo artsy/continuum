@@ -7,13 +7,12 @@
     "test": "echo \"Error: no test specified\"",
     "css": "stylus --watch components/layout/index.styl --out public/",
     "html": "jade --watch components/layout/index.jade --out public/",
-    "js": "watchify --transform coffeeify components/layout/index.coffee -o public/index.js",
+    "js": "watchify --transform coffeeify --transform jadeify components/layout/index.coffee -o public/index.js",
     "build": "echo 'TBD: Minify, gzip, and all that good stuff'",
     "images": "for f in images/*.jpg; do convert -strip -interlace Plane -quality 70% -resize 1000x1000 \"$f\" public/\"$f\"; done",
     "watch": "npm run css & npm run js & npm run html",
     "browsersync": "browser-sync start --files \"**/*.coffee,**/*.jade,**/*.styl\" --server public --reload-delay 1000",
     "start": "npm run watch & npm run browsersync"
-
   },
   "repository": {
     "type": "git",
@@ -37,6 +36,7 @@
     "coffee-script": "^1.9.3",
     "coffeeify": "^1.1.0",
     "jade": "^1.11.0",
+    "jadeify": "^4.4.0",
     "jquery": "^2.1.4",
     "nib": "^1.1.0",
     "stylus": "^0.52.0",
