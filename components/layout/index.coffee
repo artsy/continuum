@@ -27,7 +27,6 @@ $ ->
   render(DEFAULT_LANGUAGE)
 
   toggleLanguageOnClick = (e) ->
-    console.log this
     language = $(e.currentTarget).data('language')
     render(language)
 
