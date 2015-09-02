@@ -1,61 +1,61 @@
-.section-one.top-margin
-  a#body-first-section.js-display-content.is-mobile
+section.top-margin
+  a.js-display-content.is-mobile
     h1.body-section-title= copy.intro.sectionTitle[language]
-  #section1.body-section-content.js-section-content.flex-row
-    .carousel-track__image
+  .body-section-content.js-section-content.flex-row.remove-bottom-margin
+    .carousel-track__image.right-gutter-formatter
       include ../carousel/carousel.jade
       for figure in copy.intro.carousel
         +carousel-figure(figure.image_url, figure.caption[language])(class='slide-images')
-    //- p.image-caption-format Musée du Louvre
-    .section1-text
+    .intro-text.left-gutter-formatter
       h1.body-section-title.is-desktop= copy.intro.sectionTitle[language]
       p= copy.intro.introBody[language]
-.section-two.top-margin
-  a#body-second-section.js-display-content.is-mobile
+section.top-margin
+  a.js-display-content.is-mobile
     h1.body-section-title= copy.collecting.collectingTitle[language]
-  .body-section-content.body-section-content__section-two.js-section-content.flex-row.flex-row__reverse
-    .columns
-      .column-one
+  .body-section-content.body-section-content__section-two.js-section-content.flex-row.flex-row__reverse.remove-bottom-margin
+    .columns.remove-bottom-margin.left-gutter-formatter
+      .column
         include ./mixins/artist-container.jade
         - options = {path: './images/Body_2.1.jpg', artistName: 'Claude Monet', artwork: 'Le Parlement, soleil couchant (The House of Parliament, at Sunset),', artworkDate: '1900-1901,', location: 'Christie\'s', className: 'small-rectangle'}
         +artist-container(options)
         - options = {path: './images/Body_2.3.jpg', artistName: 'Jeff Koons', artwork: 'Metallic Venus,', artworkDate: '2010-2012,', location: 'Gagosian Gallery', className: 'vertical-rectangle'}
         +artist-container(options)
-      .column-two
+      .column.staggered
         - options = {path: './images/Body_2.2.jpg', artistName: 'Zhan Wang', artwork: 'Artificial Rock #96,', artworkDate: '2006 Long March Space', className: 'vertical-rectangle'}
         +artist-container(options)
         - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
         +artist-container(options)
-    .section-two-text
+    .section-two-text.right-gutter-formatter
       .section-two-text-container
         h1.body-section-title.is-desktop= copy.collecting.collectingTitle[language]
         p= copy.collecting.text[language]
-.section-three.top-margin
-  a#body-third-section.js-display-content.is-mobile
+section.top-margin#collecting
+  a.js-display-content.is-mobile
     h1.body-section-title= copy.genome.genomeTitle[language]
-  .body-section-content.js-section-content.flex-row
-    img(src='./images/Body_3.jpg')
-    .section-three-text-container
+  .body-section-content.js-section-content.flex-row.remove-bottom-margin
+    img.right-gutter-formatter(src='./images/Body_3.jpg')
+    .section-three-text-container.left-gutter-formatter
       h1.body-section-title.is-desktop= copy.genome.genomeTitle[language]
       p.section-three-text= copy.genome.text[language]
-.section-four.is-mobile
-  a#body-fourth-section.js-display-content
-    h1.body-section-title= copy.ios.iosTitle[language]
-  .body-section-content.margin-bottom.js-section-content.flex-row
-    img(src='./images/Body_4.jpg')
-    p.format-spacing= copy.ios.text[language]
-    button.avant-garde-button-black.launch-app-store= copy.ios.link[language]
-.section-five.top-margin
-  a#body-fifth-section.js-display-content.is-mobile
-    h1.body-section-title.last-border= copy.partnership.partnershipTitle[language]
-  .body-section-five.is-mobile
-  h1.body-section-title.last-border.is-desktop= copy.partnership.partnershipTitle[language]
-  .body-section-five-content.js-section-content.flex-row
-    .section-five-content__part1
+section#genome.top-margin
+  a.js-display-content.is-mobile
+    h1.body-section-title.is-mobile= copy.ios.iosTitle[language]
+  .body-section-content.margin-bottom.js-section-content.flex-row.flex-row__reverse.remove-bottom-margin
+    img.left-gutter-formatter(src='./images/Body_4.jpg')
+    .section-four-text-container.right-gutter-formatter
+      h1.body-section-title.is-desktop= copy.ios.iosTitle[language]
+      p.format-spacing= copy.ios.text[language]
+      button.avant-garde-button-black.launch-app-store= copy.ios.link[language]
+section.top-margin
+  h1#partnership-header.body-section-title.is-desktop= copy.partnership.partnershipTitle[language]
+  a.js-display-content.is-mobile
+    h1.body-section-title= copy.partnership.partnershipTitle[language]
+  .body-section-content.js-section-content.flex-row.remove-bottom-margin
+    .section-five-content__part1.right-gutter-formatter
       p.body-section-sub-header= copy.partnership.gallery.subTitle[language]
       p.format-spacing= copy.partnership.gallery.text[language]
       button.avant-garde-button-black.link-artsy-galleries= copy.partnership.gallery.link[language]
-    .section-five-content__part2
+    .section-five-content__part2.left-gutter-formatter
       p.body-section-sub-header= copy.partnership.institution.subTitle[language]
       p.format-spacing= copy.partnership.institution.text[language]
       button.avant-garde-button-black.link-artsy-institutions= copy.partnership.institution.link[language]
