@@ -1,8 +1,10 @@
 .footer-logo
   include ../header/public/logotype.svg
+
 .footer-content
   p= copy.footer.footerTitle[language]
 
-  a.footer-email(href='mailto:#{partners@artsy.net}')
-    p= copy.footer.footerEmail[language]
-      #[span.footer-contact-email partners@artsy.net]
+  a.footer-email( href='mailto:partners@artsy.net' )
+    p
+      = copy.footer.footerEmail[language]
+      span.footer-contact-email partners@artsy.net

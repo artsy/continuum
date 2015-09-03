@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "css": "stylus --watch components/layout/index.styl --out public/",
+    "css": "stylus -u nib --watch components/layout/index.styl --out public/",
     "html": "jade --watch components/layout/index.jade --out public/",
     "js": "watchify --transform coffeeify --transform jadeify components/layout/index.coffee -o public/index.js",
     "build": "echo 'TBD: Minify, gzip, and all that good stuff'",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/artsy/continuum#readme",
   "dependencies": {
+    "artsy-elan": "0.0.6",
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "coffee-script": "^1.9.3",
