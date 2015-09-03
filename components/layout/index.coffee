@@ -27,10 +27,11 @@ $ ->
   render(DEFAULT_LANGUAGE)
 
   toggleLanguageOnClick = (e) ->
+    e.preventDefault()
     language = $(e.currentTarget).data('language')
     render(language)
 
-  $('body').on 'click', '.header-language-toggle a', toggleLanguageOnClick
+  $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
 
 
   initSlideShow()
