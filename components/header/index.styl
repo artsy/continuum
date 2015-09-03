@@ -1,56 +1,42 @@
 .header
-  height 350px
-  position relative
-  background-image url('./images/Banner_3.jpg')
-  background-position center
-  background-size 526px
-
-.header nav
   width 100%
-  height 62px
-  // top 0
-  // left 0
-  border-bottom 1px solid white
+  height 100vh
+  background-color black
+  background-image url('./images/Banner_3.jpg')
+  background-position center center
+  // Not the most performant thing if we're gonna do anything fancy with it:
+  background-size cover
 
-.is-desktop-header-icon
-  display none
-
-.header svg
-  padding 10px
-  polygon, path
-    fill white
-
-.nav-icons
-  float right
-  position relative
-  top 50%
-  transform translateY(-50%)
-
-.header-language-toggle
-  float right
-  margin 0 15px
-  position relative
-  top 50%
-  transform translateY(-50%)
-
-.header-chinese
-  color white
-  text-align center
-  display inline-block
-  font-size 20px
-  margin-left 10px
+.header-content
+  height 100%
+  display flex
+  flex-direction column
+  justify-content space-around
 
 .header-text
-  margin 20px
-  font-size 17px
-  line-height 1.5
-  position absolute
-  top 50%
-  transform: translate(0, -50%)
-
-.header-text h1
-  margin 30px 0
+  width 75%
+  margin 5% auto
   color white
+  avant-garde-size('xl-headline')
+  font-size 50px
+  > p
+    margin 40px 0
+    &:first-child
+      margin-top 0
+    &:last-child
+      margin-bottom 0
 
-.is-desktop-header
-  display none
+.header-section-nav
+  height 25%
+  text-align center
+  > a
+    display inline-block
+    padding 15px 40px
+    border-left 1px solid rgba(white, 0.5)
+    border-right @border-left
+    text-decoration none
+    avant-garde-size('l-headline')
+    color white
+    transition opacity 0.25s
+    &:hover
+      opacity 0.5

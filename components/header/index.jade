@@ -1,14 +1,11 @@
-nav
-  include ./public/logotype.svg
-  .nav-icons
-    .visit-artsy.is-desktop-header-icon
-      p visit artsy.net
-    .header-language-toggle
-        a.header-chinese(data-language='simplified') 繁
-        a.header-chinese(data-language='traditional') 體
-div.header-text
-  h1= copy.header.headline[language]
-  h1= copy.header.subHeadline[language]
-.section-nav.is-desktop-header
-  for link in copy.header.navLinks[language]
-    p= link
+include ../nav/index
+
+.header-content
+  .header-text
+    p= copy.header.headline[language]
+    p= copy.header.subHeadline[language]
+
+  nav.header-section-nav
+    for link in copy.header.navLinks[language]
+      a( href='#' )
+        = link
