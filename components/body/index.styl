@@ -51,13 +51,13 @@
   -webkit-columns 2
   -moz-columns: 2
   columns: 2
+
+.column
+  margin 0 5px
+
+.staggered
+  padding-top 200px
   margin-bottom 40px
-
-.column-one
-  padding-bottom 40px
-
-.column-two
-  padding-top 55px
 
 .artist-container
   width 100%
@@ -73,19 +73,14 @@
   margin-bottom 20px
   padding-top 20px
 
-.body-section-five
-  border-top 1px solid gray-color
+section:last-of-type h1.body-section-title
+  border-bottom 1px solid gray-color
+
+section:last-of-type .body-section-content
+  border-top-style none
 
 .format-spacing
   padding-bottom 20px
-
-.body-section-five-content
-  display none
-  p
-    line-height 1.5
-
-.image-caption-format
-  margin-bottom 40px
 
 h1.body-section-title.is-desktop
   display none
