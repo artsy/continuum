@@ -15,15 +15,26 @@
     height 100%
     vertical-align bottom
 
-.nav-items
+// .nav-items:first-child a
+//   display none
+
+.nav-item:first-child
+  display none
   //
 .nav-item
   display inline-block
   text-decoration none
   padding 2px
-  margin 0 1em
+  margin 0 .5em
   &
   &:visited
     color white
   &.is-active
     border-bottom 2px solid white
+
+@media (min-device-width 1200px)
+  .nav-item:first-child
+    display inline-block
+
+  .nav-item
+    margin 0 1em
