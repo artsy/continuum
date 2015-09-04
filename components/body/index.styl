@@ -6,26 +6,20 @@
   margin 0 20px
 
 .body-section-title
-  margin-bottom 20px
+  border-top 1px solid gray-color
+  padding 20px 0
   avant-garde('l-headline')
-  &:after
-    content ''
-    display block
-    width 50px
-    margin 20px auto 0 auto
-    border-bottom 2px solid black
 
 .margin-bottom
   margin-bottom 40px
 
-.body-section-content img
-  width 100%
-  margin-bottom 15px
-  padding-top 40px
-
 .body-section-content
   border-top 1px solid gray-color
   display none
+  img
+    width 100%
+    margin-bottom 15px
+    padding-top 40px
   &:not(.margin-bottom)
     margin-bottom 60px
 
@@ -38,6 +32,7 @@
   height 135px
 
 .body-section-content__section-two
+  @extends .body-section-content
   h2
     font-weight bold
     margin-top 15px
@@ -45,7 +40,7 @@
     font-style italic
   p
     line-height 1.5
-    font-size 13px
+    font-size 16px
 
 .columns
   -webkit-columns 2
@@ -55,15 +50,17 @@
 .column
   margin 0 5px
 
+.artist-text > p
+  font-size 13px
+
 .staggered
   padding-top 200px
   margin-bottom 40px
+  p
+  font-size 13px
 
 .artist-container
   width 100%
-
-.section-two-text p
-  font-size 16px
 
 .avant-garde-button-black:not(.mailto-partners)
   margin-bottom 20px
@@ -73,16 +70,17 @@
   margin-bottom 20px
   padding-top 20px
 
-section:last-of-type h1.body-section-title
-  border-bottom 1px solid gray-color
+// section:last-of-type h1.body-section-title
+//   border-bottom 1px solid gray-color
 
-section:last-of-type .body-section-content
-  border-top-style none
+
+// section:last-of-type .body-section-content
+//   border-top-style none
 
 .format-spacing
   padding-bottom 20px
 
-h1.body-section-title.is-desktop
+.body-section-title.is-desktop
   display none
 
 @import 'desktop'
