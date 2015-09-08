@@ -6,6 +6,13 @@
   .main-side-margin
     margin 0 20px
 
+  .chevron-nav-list section > a
+    chevron-item()
+    border-top-style none
+    border-bottom-style none
+    padding-top 0px
+    padding-bottom 0px
+
   .body-section-title
     border-top 1px solid gray-color
     padding 20px 0
@@ -21,6 +28,13 @@
       width 100%
       margin-bottom 15px
       padding-top 40px
+    .body-img
+      width 100%
+      margin-bottom 15px
+      margin-top 40px
+      height 54vw
+      background-size cover
+      background-position center center
     &:not(.margin-bottom)
       margin-bottom 60px
 
@@ -91,6 +105,9 @@
   .body-content-container
     padding-top 0px
 
+  .chevron-nav-list section > a
+    display none
+
   section
     margin-top 200px
 
@@ -106,6 +123,14 @@
       margin-bottom 0px
       padding-top 0px
       width 100%
+    .body-img
+      width 100%
+      margin-top 0px
+      height 54vw
+      background-size contain
+      background-position center center
+      background-repeat no-repeat
+      max-height 400px
 
   .flex-row__reverse
     flex-direction column-reverse
