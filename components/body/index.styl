@@ -1,86 +1,167 @@
-.body-content-container
-  padding-top 20px
-  garamond-size('l-body')
+@media (max-width 480px)
+  .body-content-container
+    padding-top 20px
+    garamond-size('l-body')
 
-.main-side-margin
-  margin 0 20px
+  .main-side-margin
+    margin 0 20px
 
-.body-section-title
-  border-top 1px solid gray-color
-  padding 20px 0
-  avant-garde('l-headline')
+  .body-section-title
+    border-top 1px solid gray-color
+    padding 20px 0
+    avant-garde('l-headline')
 
-.margin-bottom
-  margin-bottom 40px
+  .margin-bottom
+    margin-bottom 40px
 
-.body-section-content
-  border-top 1px solid gray-color
-  display none
-  img
+  .body-section-content
+    border-top 1px solid gray-color
+    display none
+    img
+      width 100%
+      margin-bottom 15px
+      padding-top 40px
+    &:not(.margin-bottom)
+      margin-bottom 60px
+
+  .vertical-rectangle
     width 100%
-    margin-bottom 15px
-    padding-top 40px
-  &:not(.margin-bottom)
-    margin-bottom 60px
+    height 205px
 
-.vertical-rectangle
-  width 100%
-  height 205px
+  .small-rectangle
+    width 100%
+    height 135px
 
-.small-rectangle
-  width 100%
-  height 135px
+  .body-section-content__section-two
+    @extends .body-section-content
+    h2
+      font-weight bold
+      margin-top 15px
+    .italicize
+      font-style italic
+    p
+      line-height 1.5
+      font-size 16px
 
-.body-section-content__section-two
-  @extends .body-section-content
-  h2
+  .columns
+    -webkit-columns 2
+    -moz-columns: 2
+    columns: 2
+
+  .column
+    margin 0 5px
+
+  .artist-text > p
+    font-size 13px
+
+  .staggered
+    padding-top 200px
+    margin-bottom 40px
+    p
+    font-size 13px
+
+  .artist-container
+    width 100%
+
+  .avant-garde-button-black:not(.mailto-partners)
+    margin-bottom 20px
+
+  .body-section-sub-header
     font-weight bold
-    margin-top 15px
-  .italicize
-    font-style italic
-  p
-    line-height 1.5
-    font-size 16px
+    margin-bottom 20px
+    padding-top 20px
 
-.columns
-  -webkit-columns 2
-  -moz-columns: 2
-  columns: 2
-
-.column
-  margin 0 5px
-
-.artist-text > p
-  font-size 13px
-
-.staggered
-  padding-top 200px
-  margin-bottom 40px
-  p
-  font-size 13px
-
-.artist-container
-  width 100%
-
-.avant-garde-button-black:not(.mailto-partners)
-  margin-bottom 20px
-
-.body-section-sub-header
-  font-weight bold
-  margin-bottom 20px
-  padding-top 20px
-
-// section:last-of-type h1.body-section-title
-//   border-bottom 1px solid gray-color
+  // section:last-of-type h1.body-section-title
+  //   border-bottom 1px solid gray-color
 
 
-// section:last-of-type .body-section-content
-//   border-top-style none
+  // section:last-of-type .body-section-content
+  //   border-top-style none
 
-.format-spacing
-  padding-bottom 20px
+  .format-spacing
+    padding-bottom 20px
 
-.body-section-title.is-desktop
-  display none
+  .body-section-title.is-desktop
+    display none
 
-@import 'desktop'
+@media (min-width 481px)
+  .main-side-margin
+    margin 0 170px
+
+  .body-content-container
+    padding-top 0px
+
+  section
+    margin-top 200px
+
+  .body-section-content
+    display flex
+    flex-direction column
+    font-size 22px
+    border-top-style none
+    padding-top 0px
+    margin-bottom 0px
+    img
+      max-height 400px
+      margin-bottom 0px
+      padding-top 0px
+      width 100%
+
+  .flex-row__reverse
+    flex-direction column-reverse
+
+  .body-section-content__section-two
+    display flex
+    flex-direction column-reverse
+
+  .body-section-title.is-desktop
+    display block
+    padding-top 0px
+    padding-bottom 30px
+    text-align center
+    font-size 24px
+    font-weight bolder
+    &:after
+      content ''
+      display block
+      width 50px
+      margin 20px auto 0 auto
+      border-bottom 2px solid black
+
+  .is-mobile
+    display none
+
+  .body-section-title, .body-section-content__section-two
+    border-top-style none
+
+  .columns
+    -webkit-columns 2
+    -moz-columns: 2
+    columns: 2
+    margin-bottom 0px
+    padding-top 0px
+    p
+      font-size: 17px;
+
+  .small-rectangle
+    height 210px
+
+  .vertical-rectangle
+    height 280px
+
+  .column
+    margin 0 5px
+
+  .staggered
+    padding-top 150px
+
+  .section-two-text
+    margin-bottom 40px
+
+  .avant-garde-button-black
+    margin 20px 0px 40px 0px
+
+  .body-section-sub-header
+    padding-bottom 10px
+
+  @import 'desktop'
