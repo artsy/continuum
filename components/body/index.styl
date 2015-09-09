@@ -85,18 +85,21 @@
     margin-bottom 20px
     padding-top 20px
 
-  // section:last-of-type h1.body-section-title
-  //   border-bottom 1px solid gray-color
+  section:last-of-type h1.body-section-title
+    border-bottom 1px solid gray-color
 
 
-  // section:last-of-type .body-section-content
-  //   border-top-style none
+  section:last-of-type .body-section-content
+    border-top-style none
 
   .format-spacing
     padding-bottom 20px
 
   .body-section-title.is-desktop
     display none
+
+  section > a.is-active::after
+    transform rotate(90deg)
 
 @media (min-width 481px)
   .main-side-margin
@@ -188,5 +191,11 @@
 
   .body-section-sub-header
     padding-bottom 10px
+
+  section:last-of-type h1.body-section-title
+    border-bottom-style none
+
+  section:last-of-type .body-section-content
+    border-top-style none
 
   @import 'desktop'
