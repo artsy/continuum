@@ -12,6 +12,7 @@
     "images": "for f in images/*.jpg; do convert -strip -interlace Plane -quality 70% -resize 1000x1000 \"$f\" public/\"$f\"; done",
     "watch": "npm run css & npm run js & npm run html",
     "browsersync": "browser-sync start --files \"**/*.coffee,**/*.jade,**/*.styl\" --server public --reload-delay 1000",
+    "icons": "cp -a node_modules/artsy-iconfont/output/fonts public/fonts",
     "start": "npm run watch & npm run browsersync"
   },
   "repository": {
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/artsy/continuum#readme",
   "dependencies": {
     "artsy-elan": "0.0.6",
+    "artsy-iconfont": "git://github.com/artsy/artsy-iconfont.git",
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "coffee-script": "^1.9.3",
