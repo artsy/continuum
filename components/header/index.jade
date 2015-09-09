@@ -6,6 +6,6 @@ include ../nav/index
     p= copy.header.subHeadline[language]
 
   nav.header-section-nav
-    for link in copy.header.navLinks[language]
-      a( href='#' )
-        = link
+    for link in Object.keys(copy.header.navLinks[language])
+      a( href='##{link}' )
+        = copy.header.navLinks[language][link]
