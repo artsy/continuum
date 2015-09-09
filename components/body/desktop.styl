@@ -1,60 +1,75 @@
-@media (min-device-width 1200px)
+@media (min-width 1200px)
   .main-side-margin
     margin 0 170px
+
+  .chevron-nav-list section > a
+    display none
 
   .body-content-container
     padding-top 0px
 
-  .flex-row
+  section
+    margin-top 250px
+
+  .body-section-content
     display flex
     flex-direction row
+    font-size 22px
+    border-top-style none
+    padding-top 0px
+    margin-bottom 0px
+    .body-img
+      width 100%
+      margin-top 0px
+      height 54vw
+      background-size contain
+      background-position center center
+      background-repeat no-repeat
+      max-height 400px
 
   .flex-row__reverse
     flex-direction row-reverse
 
-  .body-section-content img
-    max-height 400px
+  .body-section-content__section-two
+    display flex
+    flex-direction row-reverse
 
-  .body-section-content h1.is-desktop
+  .body-section-title.is-desktop
     display block
     padding-top 0px
     padding-bottom 30px
     text-align center
     font-size 24px
     font-weight bolder
-
-  .body-section-content p
-    font-size 22px
-    font-weight 100
-    line-height 1.5
+    &:after
+      content ''
+      display block
+      width 50px
+      margin 20px auto 0 auto
+      border-bottom 2px solid black
 
   .is-mobile
     display none
 
-  .top-margin
-    margin-top 200px
-
-  .body-section-title
-  .body-section-content
+  .body-section-title, .body-section-content__section-two
     border-top-style none
 
-  #genome img
   .left-gutter-formatter
     padding-left 35px
     width 50%
 
-  #collecting img
   .right-gutter-formatter
     padding-right 35px
     width 50%
 
-  .body-section-content.remove-bottom-margin
-  .body-section-content img
   .columns
+    -webkit-columns 2
+    -moz-columns: 2
+    columns: 2
     margin-bottom 0px
-
-  .columns p
-    font-size: 17px;
+    padding-top 0px
+    p
+      font-size: 17px;
 
   .small-rectangle
     height 210px
@@ -67,18 +82,14 @@
 
   .staggered
     padding-top 150px
+    
+  .artist-text
+    margin-bottom 40px
 
   .section-two-text-container
     position relative
     top 50%
     transform translateY(130%)
 
-  #partnership-header.is-desktop
-    display block
-    border-bottom-style none
-    font-size 24px
-    text-align center
-    font-weight bolder
-
-  #remove-top-padding
-    padding-top 0px
+  .section-two-text-container > p
+    font-size 22px

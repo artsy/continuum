@@ -24,12 +24,17 @@ $ ->
       copy: footerData
       language: language
 
+
   render(DEFAULT_LANGUAGE)
 
   toggleLanguageOnClick = (e) ->
     e.preventDefault()
+
     language = $(e.currentTarget).data('language')
-    render(language)
+    render language
+
+    $('.nav-items a.is-active').removeClass('is-active')
+    $(".nav-items a[data-language='#{language}'").addClass('is-active')
 
   $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
 
