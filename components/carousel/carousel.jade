@@ -1,4 +1,5 @@
-mixin carousel-figure(path, caption)
+mixin carousel-figure(path, caption, translation)
   figure(class!=attributes.class)
     .carousel-figure-img(style="background-image: url(#{path})")
     figcaption= caption
+    figcaption= translation

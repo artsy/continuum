@@ -6,7 +6,7 @@
       .carousel-track__image.right-gutter-formatter
         include ../carousel/carousel.jade
         for figure in copy.artWorld.carousel
-          +carousel-figure(figure.image_url, figure.caption[language])(class='slide-images')
+          +carousel-figure(figure.image_url, figure.caption[language], figure.englishCaption)(class='slide-images')
       .intro-text.left-gutter-formatter
         h1.body-section-title.is-desktop= copy.artWorld.sectionTitle[language]
         p= copy.artWorld.artWorldBody[language]
