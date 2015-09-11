@@ -38,10 +38,17 @@ $ ->
 
   $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
 
-  $ ->
-    $('body').on 'click', '.header-section-nav a', (e)->
-      section = $(e.currentTarget).data 'section'
-      $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
+  $('body').on 'click', '.header-section-nav a', (e)->
+    section = $(e.currentTarget).data 'section'
+    $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
+  headerImageLink = "./images/Banner_"
+  incrementer = 1
+
+  changeHeaderBackground = ->
+    $('.header').css('background-image', 'url(' + headerImageLink + (incrementer++) + '.jpg)')
+    incrementer = 1 if(incrementer == 4)
+
+  setInterval changeHeaderBackground, 3000
   initSlideShow()
   initExpandContent()
