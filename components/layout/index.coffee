@@ -42,11 +42,20 @@ $ ->
     section = $(e.currentTarget).data 'section'
     $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
-  headerImageLink = "./images/Banner_"
+  # headerImageLink = "./images/Banner_"
   incrementer = 1
 
   changeHeaderBackground = ->
-    $('.header').css('background-image', 'url(' + headerImageLink + (incrementer++) + '.jpg)')
+    # $('.header').animate { 'background-image': 'url(' + headerImageLink + (incrementer++) + '.jpg)' }, 1000
+    # $('.header').css('background-image', 'url(' + headerImageLink + (incrementer++) + '.jpg)')
+    # $('.header').css('background-image', "url(./images/Banner_#{incrementer++}.jpg)")
+    $('.header').css {
+    "background-image": "url(./images/Banner_#{incrementer++}.jpg)",
+    "-webkit-transition": "all 1s ease-in",
+    "-moz-transition": "all 1s ease-in",
+    "-o-transition": "all 1s ease-in",
+    "-ms-transition": "all 1s ease-in",
+    "transition": "all 1s ease-in" }, 1000
     incrementer = 1 if(incrementer == 4)
 
   setInterval changeHeaderBackground, 3000
