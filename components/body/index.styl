@@ -24,13 +24,11 @@
   .body-section-content
     border-top 1px solid gray-color
     display none
-    img
-      width 100%
-      margin-bottom 15px
-      padding-top 40px
+    line-height 2
+    font-size 16px
     .body-img
       width 100%
-      margin-bottom 15px
+      margin-bottom 40px
       margin-top 40px
       height 65vw
       background-size cover
@@ -50,17 +48,19 @@
     @extends .body-section-content
     h2
       font-weight bold
-      margin-top 15px
+      margin-top 5px
+      font-size 16px
     .italicize
       font-style italic
     p
-      line-height 1.5
       font-size 16px
 
   .columns
     -webkit-columns 2
     -moz-columns: 2
     columns: 2
+    margin-top 40px
+    line-height 1.5
 
   .column
     margin 0 5px
@@ -69,13 +69,18 @@
     font-size 13px
 
   .staggered
-    padding-top 200px
+    padding-top 155px
     margin-bottom 40px
     p
     font-size 13px
 
   .artist-container
     width 100%
+    margin-bottom 40px
+
+  .avant-garde-button-black
+    margin 20px 0px 90px 0px
+    font-weight bolder
 
   .avant-garde-button-black:not(.mailto-partners)
     margin-bottom 20px
@@ -98,6 +103,7 @@
     display none
 
   section > a.is-active::after
+    top 25%
     transform rotate(90deg)
 
 @media (min-width 481px)
@@ -134,12 +140,19 @@
       background-repeat no-repeat
       max-height 400px
 
-  .flex-row__reverse
-    flex-direction column-reverse
+  .artist-text
+    margin-bottom 40px
+    p
+     font-size: 15px;
+     color gray
+    h2
+      font-weight bold
+      color gray
+      font-size 15px
 
   .body-section-content__section-two
     display flex
-    flex-direction column-reverse
+    flex-direction column
 
   .body-section-title.is-desktop
     display block
@@ -148,6 +161,7 @@
     text-align center
     font-size 24px
     font-weight bolder
+    avant-garde-size('xl-headline')
     &:after
       content ''
       display block
@@ -167,8 +181,7 @@
     columns: 2
     margin-bottom 0px
     padding-top 0px
-    p
-      font-size: 17px;
+    margin-left 8%
 
   .small-rectangle
     height 210px
@@ -183,13 +196,21 @@
     padding-top 150px
 
   .section-two-text
-    margin-bottom 40px
+    margin-bottom 0px
+
+  .section-two-text-container > p
+    font-size 22px
+
+  #ios .avant-garde-button-black.launch-app-store
+    margin-bottom 0px
 
   .avant-garde-button-black
     margin 20px 0px 90px 0px
+    font-weight bolder
 
   .body-section-sub-header
     padding-bottom 10px
+    font-weight bolder
 
   section:last-of-type h1.body-section-title
     border-bottom-style none
