@@ -9,6 +9,6 @@ module.exports =
       traditional: '我們視Artsy為資源，讓人能在此學習藝術，探索藝術，收藏藝術，取之不盡，用之不竭。'
     },
     navLinks: {
-      simplified: {'artworld': '艺术世界在线', 'collecting': '收藏在 Artsy', 'genome': '艺术基因鉴定', 'ios': 'Artsy的iOS', 'partnership': '加盟 Artsy'},
+      simplified: {'artworld': '艺术世界在线', 'collecting': '收藏在 Artsy', 'genome': '艺术基因鉴定', 'ios': 'Artsy的iOS', 'partnerships': '加盟 Artsy'},
       traditional: {'artworld': 'Artsy藝術世界', 'collecting': 'Artsy收藏藝術', 'genome': '藝術基因鑑定', 'ios': 'Artsy的iOS', 'partnerships': 'Artsy夥伴加盟'}
     }
