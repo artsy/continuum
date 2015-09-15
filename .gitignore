@@ -30,3 +30,4 @@ public/.DS_Store
 public/*.css
 public/*.html
 public/*.js
+.env
