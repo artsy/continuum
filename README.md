@@ -31,13 +31,17 @@ git clone git@github.com:craigspaeth/continuum.git && cd continuum
 ```
 npm install
 ```
-- Copy and paste the font files into /public/fonts
-- Create a .env file and paste in S3 credentials (can be found in one password).
+- Create a .env file and paste in S3 credentials (can be found in 1Password).
 - Start Continuum in development mode
 ```
 npm start
 ```
-- When ready, deploy the static site to S3 (production).
+
+Deploying
+---
+
+- Copy and paste the Garamond & Avant Garde font files into /public/fonts (log into fonts.com using credentials in 1Password and download the Artsy package)
+- Run the deploy to S3 script
 ```
 npm run deploy
 ```

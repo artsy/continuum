@@ -12,8 +12,8 @@
     "images": "for f in images/*.jpg; do convert -strip -interlace Plane -quality 70% -resize 1000x1000 \"$f\" public/\"$f\"; done",
     "watch": "npm run css & npm run js & npm run html",
     "browsersync": "browser-sync start --files \"**/*.coffee,**/*.jade,**/*.styl\" --server public --reload-delay 1000",
-    "icons": "cp -a node_modules/artsy-iconfont/output/fonts public/fonts",
-    "start": "npm run watch & npm run browsersync"
+    "icons": "cp -a node_modules/artsy-iconfont/output/fonts public",
+    "start": "npm run icons & npm run watch & npm run browsersync"
   },
   "repository": {
     "type": "git",
