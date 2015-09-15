@@ -8,7 +8,7 @@
         for figure in copy.artWorld.carousel
           +carousel-figure(figure.image_url, figure.caption[language], figure.englishCaption)(class='slide-images')
       .intro-text.left-gutter-formatter
-        h1.body-section-title.is-desktop= copy.artWorld.sectionTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.artWorld.sectionTitle[language]
         p= copy.artWorld.artWorldBody[language]
   section#collecting
     a.js-display-content.is-mobile
@@ -37,7 +37,7 @@
       .right-gutter-formatter
         .body-img(style="background-image: url('./images/Body_3.jpg')")
       .left-gutter-formatter
-        h1.body-section-title.is-desktop= copy.genome.genomeTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.genome.genomeTitle[language]
         p.section-three-text= copy.genome.text[language]
   section#ios
     a.js-display-content.is-mobile
@@ -46,7 +46,7 @@
       .left-gutter-formatter
         .body-img(style="background-image: url('./images/Body_4.jpg')")
       .right-gutter-formatter
-        h1.body-section-title.is-desktop= copy.ios.iosTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.ios.iosTitle[language]
         p.format-spacing= copy.ios.text[language]
         button.avant-garde-button-black.launch-app-store= copy.ios.link[language]
   section#partnerships
