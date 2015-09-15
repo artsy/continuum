@@ -13,6 +13,11 @@
     padding-top 0px
     padding-bottom 0px
 
+  .cheveron-nav-list section:last-child > a
+    border-top-style none
+    border-bottom-style none
+    padding 0 0
+
   .body-section-title
     border-top 1px solid gray-color
     padding 20px 0
@@ -112,7 +117,7 @@
   .body-section-title.is-desktop
     display none
 
-  section > a.is-active::after
+  section > a:first-child.is-active::after
     top 25%
     transform rotate(90deg)
 
