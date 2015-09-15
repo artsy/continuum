@@ -38,6 +38,16 @@ $ ->
 
   $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
 
+  $('body').on 'click', '.header-section-nav a', (e)->
+    section = $(e.currentTarget).data 'section'
+    $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
+  incrementer = 1
+
+  changeHeaderBackground = ->
+    $('.header').css "background-image": "url(./images/Banner_#{incrementer++}.jpg)", 1000
+    incrementer = 1 if(incrementer == 4)
+
+  setInterval changeHeaderBackground, 3000
   initSlideShow()
   initExpandContent()

@@ -6,8 +6,12 @@
     background-color black
     background-image url('./images/Banner_3.jpg')
     background-position center center
-    // Not the most performant thing if we're gonna do anything fancy with it:
     background-size cover
+    -webkit-transition all 1s ease-in
+    -moz-transition all 1s ease-in
+    -o-transition all 1s ease-in
+    -ms-transition all 1s ease-in
+    transition all 1s ease-in
 
   .header-content
     height 85%
@@ -39,8 +43,12 @@
     background-color black
     background-image url('./images/Banner_3.jpg')
     background-position center center
-    // Not the most performant thing if we're gonna do anything fancy with it:
     background-size cover
+    -webkit-transition: all 1s ease-in
+    -moz-transition all 1s ease-in
+    -o-transition all 1s ease-in
+    -ms-transition all 1s ease-in
+    transition all 1s ease-in
 
   .header-content
     height 100%
@@ -71,6 +79,7 @@
       border-left 1px solid rgba(white, 0.5)
       border-right @border-left
       text-decoration none
+      cursor pointer
       avant-garde-size('l-headline')
       font-size 15px
       color white

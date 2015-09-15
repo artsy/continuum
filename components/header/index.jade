@@ -7,5 +7,5 @@ include ../nav/index
 
   nav.header-section-nav
     for link in Object.keys(copy.header.navLinks[language])
-      a( href='##{link}' )
+      a( data-section='#{link}' )
         = copy.header.navLinks[language][link]

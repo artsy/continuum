@@ -8,7 +8,7 @@
         for figure in copy.artWorld.carousel
           +carousel-figure(figure.image_url, figure.caption[language], figure.englishCaption)(class='slide-images')
       .intro-text.left-gutter-formatter
-        h1.body-section-title.is-desktop= copy.artWorld.sectionTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.artWorld.sectionTitle[language]
         p= copy.artWorld.artWorldBody[language]
   section#collecting
     a.js-display-content.is-mobile
@@ -37,7 +37,7 @@
       .right-gutter-formatter
         .body-img(style="background-image: url('./images/Body_3.jpg')")
       .left-gutter-formatter
-        h1.body-section-title.is-desktop= copy.genome.genomeTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.genome.genomeTitle[language]
         p.section-three-text= copy.genome.text[language]
   section#ios
     a.js-display-content.is-mobile
@@ -46,9 +46,9 @@
       .left-gutter-formatter
         .body-img(style="background-image: url('./images/Body_4.jpg')")
       .right-gutter-formatter
-        h1.body-section-title.is-desktop= copy.ios.iosTitle[language]
+        h1.body-section-title.is-desktop.top-margin= copy.ios.iosTitle[language]
         p.format-spacing= copy.ios.text[language]
-        button.avant-garde-button-black.launch-app-store= copy.ios.link[language]
+        a.avant-garde-button-black.launch-app-store(href="itms://itunes.apple.com/us/app/artsy-art-world-in-your-pocket/id703796080")= copy.ios.link[language]
   section#partnerships
     h1.body-section-title.is-desktop= copy.partnership.partnershipTitle[language]
     a.js-display-content.is-mobile
@@ -57,11 +57,11 @@
       .right-gutter-formatter
         p.body-section-sub-header= copy.partnership.gallery.subTitle[language]
         p.format-spacing= copy.partnership.gallery.text[language]
-        button.avant-garde-button-black= copy.partnership.gallery.link[language]
+        a.avant-garde-button-black(href="https://www.artsy.net/galleries")= copy.partnership.gallery.link[language]
       .left-gutter-formatter
         p.body-section-sub-header= copy.partnership.institution.subTitle[language]
         p.format-spacing= copy.partnership.institution.text[language]
-        button.avant-garde-button-black= copy.partnership.institution.link[language]
+        a.avant-garde-button-black(href="https://www.artsy.net/institutions")= copy.partnership.institution.link[language]
         p.body-section-sub-header= copy.partnership.auction.subTitle[language]
         p.format-spacing= copy.partnership.auction.text[language]
-        button.avant-garde-button-black.mailto-partners= copy.partnership.institution.link[language]
+        a.avant-garde-button-black.mailto-partners(href="mailto:partners@artsy.net")= copy.partnership.institution.link[language]
