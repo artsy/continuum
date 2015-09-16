@@ -6,17 +6,8 @@
   .main-side-margin
     margin 0 20px
 
-  .chevron-nav-list section > a
+  .chevron
     chevron-item()
-    border-top-style none
-    border-bottom-style none
-    padding-top 0px
-    padding-bottom 0px
-
-  .cheveron-nav-list section:last-child > a
-    border-top-style none
-    border-bottom-style none
-    padding 0 0
 
   .body-section-title
     border-top 1px solid gray-color
@@ -31,6 +22,7 @@
     display none
     line-height 2
     font-size 16px
+    margin-bottom 60px
     .body-img
       width 100%
       margin-bottom 40px
@@ -38,8 +30,6 @@
       height 65vw
       background-size cover
       background-position center center
-    &:not(.margin-bottom)
-      margin-bottom 60px
 
   .vertical-rectangle
     width 100%
@@ -93,12 +83,14 @@
     width 100%
     margin-bottom 40px
 
-  .avant-garde-button-black
-    margin 20px 0px 90px 0px
-    font-weight bolder
+  .avant-garde-button-black:visited
+    color #fff
 
-  .avant-garde-button-black:not(.mailto-partners)
-    margin-bottom 20px
+  #partnerships .avant-garde-button-black
+    margin-bottom 40px
+
+  .mailto-partners
+    margin-bottom 0px
 
   .body-section-sub-header
     font-weight bold
@@ -117,7 +109,7 @@
   .body-section-title.is-desktop
     display none
 
-  section > a:first-child.is-active::after
+  section > a.is-active::after
     top 25%
     transform rotate(90deg)
 
@@ -127,9 +119,6 @@
 
   .body-content-container
     padding-top 0px
-
-  .chevron-nav-list section > a
-    display none
 
   section
     margin-top 200px
@@ -149,7 +138,6 @@
     .body-img
       width 100%
       margin-top 0px
-      // height 54vw
       height 65vw
       background-size cover
       background-position center center
@@ -221,8 +209,10 @@
     margin-bottom 0px
 
   .avant-garde-button-black
-    margin 20px 0px 90px 0px
-    font-weight bolder
+    width 250px
+    margin 40px 0 90px 0
+    &:visited
+      color #fff
 
   .body-section-sub-header
     padding-bottom 10px
@@ -237,4 +227,9 @@
   section:last-of-type .body-section-content
     border-top-style none
 
-  @import 'desktop'
+  .chevron-nav-list a
+    margin-top 20px !important
+    &::after
+      display none
+
+@import 'desktop'

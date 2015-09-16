@@ -1,67 +1,66 @@
-.chevron-nav-list
-  section#artworld
-    a.js-display-content.is-mobile
-      h1.body-section-title= copy.artWorld.sectionTitle[language]
-    .body-section-content.js-section-content
-      .carousel-track__image.right-gutter-formatter
-        include ../carousel/carousel.jade
-        for figure in copy.artWorld.carousel
-          +carousel-figure(figure.image_url, figure.caption[language], figure.englishCaption)(class='slide-images')
-      .intro-text.left-gutter-formatter
-        h1.body-section-title.is-desktop.top-margin= copy.artWorld.sectionTitle[language]
-        p= copy.artWorld.artWorldBody[language]
-  section#collecting
-    a.js-display-content.is-mobile
-      h1.body-section-title= copy.collecting.collectingTitle[language]
-    .body-section-content__section-two.js-section-content
-      .columns.left-gutter-formatter
-        .column
-          include ./mixins/artist-container.jade
-          - options = {path: './images/Body_2.1.jpg', artistName: 'Claude Monet', artwork: 'Le Parlement, soleil couchant (The House of Parliament, at Sunset),', artworkDate: '1900-1901,', location: 'Christie\'s', className: 'small-rectangle'}
-          +artist-container(options)
-          - options = {path: './images/Body_2.3.jpg', artistName: 'Jeff Koons', artwork: 'Metallic Venus,', artworkDate: '2010-2012,', location: 'Gagosian Gallery', className: 'vertical-rectangle'}
-          +artist-container(options)
-        .column.staggered
-          - options = {path: './images/Body_2.2.jpg', artistName: 'Zhan Wang', artwork: 'Artificial Rock #96,', artworkDate: '2006 Long March Space', className: 'vertical-rectangle'}
-          +artist-container(options)
-          - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
-          +artist-container(options)
-      .section-two-text.right-gutter-formatter
-        .section-two-text-container
-          h1.body-section-title.is-desktop= copy.collecting.collectingTitle[language]
-          p= copy.collecting.text[language]
-  section#genome
-    a.js-display-content.is-mobile
-      h1.body-section-title= copy.genome.genomeTitle[language]
-    .body-section-content.js-section-content
-      .right-gutter-formatter
-        .body-img(style="background-image: url('./images/Body_3.jpg')")
-      .left-gutter-formatter
-        h1.body-section-title.is-desktop.top-margin= copy.genome.genomeTitle[language]
-        p.section-three-text= copy.genome.text[language]
-  section#ios
-    a.js-display-content.is-mobile
-      h1.body-section-title.is-mobile= copy.ios.iosTitle[language]
-    .body-section-content.margin-bottom.js-section-content.flex-row__reverse
-      .left-gutter-formatter
-        .body-img(style="background-image: url('./images/Body_4.jpg')")
-      .right-gutter-formatter
-        h1.body-section-title.is-desktop.top-margin= copy.ios.iosTitle[language]
-        p.format-spacing= copy.ios.text[language]
-        a.avant-garde-button-black.launch-app-store(href="itms://itunes.apple.com/us/app/artsy-art-world-in-your-pocket/id703796080")= copy.ios.link[language]
-  section#partnerships
-    h1.body-section-title.is-desktop= copy.partnership.partnershipTitle[language]
-    a.js-display-content.is-mobile
-      h1.body-section-title= copy.partnership.partnershipTitle[language]
-    .body-section-content.js-section-content.flex-row
-      .right-gutter-formatter
-        p.body-section-sub-header= copy.partnership.gallery.subTitle[language]
-        p.format-spacing= copy.partnership.gallery.text[language]
-        a.avant-garde-button-black(href="https://www.artsy.net/galleries")= copy.partnership.gallery.link[language]
-      .left-gutter-formatter
-        p.body-section-sub-header= copy.partnership.institution.subTitle[language]
-        p.format-spacing= copy.partnership.institution.text[language]
-        a.avant-garde-button-black(href="https://www.artsy.net/institutions")= copy.partnership.institution.link[language]
-        p.body-section-sub-header= copy.partnership.auction.subTitle[language]
-        p.format-spacing= copy.partnership.auction.text[language]
-        a.avant-garde-button-black.mailto-partners(href="mailto:partners@artsy.net")= copy.partnership.institution.link[language]
+section#artworld
+  a.js-display-content.is-mobile.chevron
+    h1.body-section-title= copy.artWorld.sectionTitle[language]
+  .body-section-content.js-section-content
+    .carousel-track__image.right-gutter-formatter
+      include ../carousel/carousel.jade
+      for figure in copy.artWorld.carousel
+        +carousel-figure(figure.image_url, figure.caption[language], figure.englishCaption)(class='slide-images')
+    .intro-text.left-gutter-formatter
+      h1.body-section-title.is-desktop.top-margin= copy.artWorld.sectionTitle[language]
+      p= copy.artWorld.artWorldBody[language]
+section#collecting
+  a.js-display-content.is-mobile.chevron
+    h1.body-section-title= copy.collecting.collectingTitle[language]
+  .body-section-content__section-two.js-section-content
+    .columns.left-gutter-formatter
+      .column
+        include ./mixins/artist-container.jade
+        - options = {path: './images/Body_2.1.jpg', artistName: 'Claude Monet', artwork: 'Le Parlement, soleil couchant (The House of Parliament, at Sunset),', artworkDate: '1900-1901,', location: 'Christie\'s', className: 'small-rectangle'}
+        +artist-container(options)
+        - options = {path: './images/Body_2.3.jpg', artistName: 'Jeff Koons', artwork: 'Metallic Venus,', artworkDate: '2010-2012,', location: 'Gagosian Gallery', className: 'vertical-rectangle'}
+        +artist-container(options)
+      .column.staggered
+        - options = {path: './images/Body_2.2.jpg', artistName: 'Zhan Wang', artwork: 'Artificial Rock #96,', artworkDate: '2006 Long March Space', className: 'vertical-rectangle'}
+        +artist-container(options)
+        - options = {path: './images/Body_2.4.jpg', artistName: 'Ding Yi', artwork: 'Appearance of Crosses', artworkDate: '2013-11, 2013', location: 'ShanghART', className: 'small-rectangle'}
+        +artist-container(options)
+    .section-two-text.right-gutter-formatter
+      .section-two-text-container
+        h1.body-section-title.is-desktop= copy.collecting.collectingTitle[language]
+        p= copy.collecting.text[language]
+section#genome
+  a.js-display-content.is-mobile.chevron
+    h1.body-section-title= copy.genome.genomeTitle[language]
+  .body-section-content.js-section-content
+    .right-gutter-formatter
+      .body-img(style="background-image: url('./images/Body_3.jpg')")
+    .left-gutter-formatter
+      h1.body-section-title.is-desktop.top-margin= copy.genome.genomeTitle[language]
+      p.section-three-text= copy.genome.text[language]
+section#ios
+  a.js-display-content.is-mobile.chevron
+    h1.body-section-title.is-mobile= copy.ios.iosTitle[language]
+  .body-section-content.js-section-content.flex-row__reverse
+    .left-gutter-formatter
+      .body-img(style="background-image: url('./images/Body_4.jpg')")
+    .right-gutter-formatter
+      h1.body-section-title.is-desktop.top-margin= copy.ios.iosTitle[language]
+      p.format-spacing= copy.ios.text[language]
+      a.avant-garde-button-black.launch-app-store(href="itms://itunes.apple.com/us/app/artsy-art-world-in-your-pocket/id703796080")= copy.ios.link[language]
+section#partnerships
+  h1.body-section-title.is-desktop= copy.partnership.partnershipTitle[language]
+  a.js-display-content.is-mobile.chevron
+    h1.body-section-title= copy.partnership.partnershipTitle[language]
+  .body-section-content.js-section-content.flex-row
+    .right-gutter-formatter
+      p.body-section-sub-header= copy.partnership.gallery.subTitle[language]
+      p.format-spacing= copy.partnership.gallery.text[language]
+      a.avant-garde-button-black(href="https://www.artsy.net/galleries")= copy.partnership.gallery.link[language]
+    .left-gutter-formatter
+      p.body-section-sub-header= copy.partnership.institution.subTitle[language]
+      p.format-spacing= copy.partnership.institution.text[language]
+      a.avant-garde-button-black(href="https://www.artsy.net/institutions")= copy.partnership.institution.link[language]
+      p.body-section-sub-header= copy.partnership.auction.subTitle[language]
+      p.format-spacing= copy.partnership.auction.text[language]
+      a.avant-garde-button-black.mailto-partners(href="mailto:partners@artsy.net")= copy.partnership.institution.link[language]
