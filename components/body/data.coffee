@@ -59,7 +59,7 @@ module.exports =
   ios:
     iosTitle: {
       simplified: 'Artsy 的iOS',
-      traditional: '藝術世界，盡在掌中'
+      traditional: '藝術世界'
     },
     text: {
       simplified: '随时在线，无远弗届 Artsy iOS 应用程式专为iPhone手機及iPad平板電腦设计，让您随时随地透过移動設備浏览艺术，了解艺术，储存图片，收藏作品。它更是您的个性化在地指南，带您走遍每个Artsy专题重点艺术博览会。请扫描下方二维码直接下载 或在App Store 线上应用程式商店搜索“Artsy”。',
