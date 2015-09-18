@@ -3,7 +3,7 @@ $ = require 'jquery'
 module.exports =
 
   initExpandContent: ->
-    $('body').on 'click', '.js-display-content', (e) ->
+    $('body').on 'touchstart', '.js-display-content', (e) ->
       e.preventDefault()
       $('.js-section-content').css('display', 'none')
       $('section > a').removeClass('is-active')
