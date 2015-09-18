@@ -20,7 +20,7 @@ module.exports =
           traditional: '藝術館'
       },
       {
-        image_url: '/images/body-1-3.jpg',
+        image_url: './images/body-1-3.jpg',
         englishCaption: 'Pearl Lam',
         caption:
           simplified: '艺术博览会',
