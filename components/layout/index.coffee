@@ -45,7 +45,8 @@ $ ->
   incrementer = 1
 
   changeHeaderBackground = ->
-    $('.header').css "background-image": "url(./images/Banner_#{incrementer++}.jpg)", 1000
+    $('.header').css "background-image": "url(./images/banner-#{incrementer}.jpg)", 1000
+    incrementer = incrementer + 1
     incrementer = 1 if(incrementer == 4)
 
   setInterval changeHeaderBackground, 3000
