@@ -6,28 +6,28 @@ module.exports =
     },
     carousel: [
       {
-        image_url: './images/Body_1_1.jpg',
+        image_url: './images/body-1-1.jpg',
         englishCaption: 'Musée du Louvre',
         caption:
           simplified: '画廊',
           traditional: '畫廊'
       },
       {
-        image_url: './images/Body_1_2.jpg',
+        image_url: './images/body-1-2.jpg',
         englishCaption: 'Los Angeles Modern Auctions',
         caption:
           simplified: '美术馆',
           traditional: '藝術館'
       },
       {
-        image_url: '/images/Body_1.3.jpg',
+        image_url: '/images/body-1-3.jpg',
         englishCaption: 'Pearl Lam',
         caption:
           simplified: '艺术博览会',
           traditional: '藝術博覽會'
       },
       {
-        image_url: "./images/Body_1.4.jpg",
+        image_url: "./images/body-1-4.jpg",
         englishCaption: 'The Armory Show',
         caption:
           simplified: '拍卖会',
