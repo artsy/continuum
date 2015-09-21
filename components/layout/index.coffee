@@ -35,8 +35,9 @@ $ ->
 
     $('.nav-items a.is-active').removeClass('is-active')
     $(".nav-items a[data-language='#{language}'").addClass('is-active')
+    console.log language
 
-  $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
+  $('body').on 'click, touchstart', '.js-language-toggle', toggleLanguageOnClick
 
   $('body').on 'click', '.header-section-nav a', (e)->
     section = $(e.currentTarget).data 'section'
