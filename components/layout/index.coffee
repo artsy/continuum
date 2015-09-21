@@ -12,6 +12,7 @@ DEFAULT_LANGUAGE = 'traditional'
 $ ->
 
   render = (language) ->
+    # $('header').html headerTemplate
     $('header').html headerTemplate
       copy: headerData
       language: language
@@ -44,8 +45,8 @@ $ ->
     $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
   rotateHeaderBanner = ->
-    $active = $('.header.active-banner')
-    $next = if $active.next('.header').length then $active.next() else $('.header:first')
+    $active = $('.header-slide.active-banner')
+    $next = if $active.next('.header-slide').length then $active.next() else $('.header-slide:first')
 
     $next.addClass('active-banner')
     $active.removeClass('active-banner')

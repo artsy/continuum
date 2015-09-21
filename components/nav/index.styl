@@ -6,6 +6,8 @@
   justify-content space-between
   align-items center
   border-bottom 1px solid rgba(white, 0.5)
+  z-index 501
+  position absolute
 
 .artsy-logo
   display inline-block
@@ -14,9 +16,6 @@
     fill white
     height 100%
     vertical-align bottom
-
-.nav-item:first-child
-  display none
   //
 .nav-item
   display inline-block
@@ -28,6 +27,13 @@
     color white
   &.is-active
     border-bottom 2px solid white
+
+.is-mobile-artsy-link
+  display none
+
+@media (min-width 481px)
+  .is-mobile-artsy-link
+    display inline-block
 
 @media (orientation: landscape)
   @media (max-width 480px)
@@ -44,3 +50,6 @@
 
   .nav-item
     margin 0 1em
+
+  .is-mobile-artsy-link
+    display inline-block
