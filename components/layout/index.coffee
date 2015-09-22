@@ -12,6 +12,7 @@ DEFAULT_LANGUAGE = 'traditional'
 $ ->
 
   render = (language) ->
+    # $('header').html headerTemplate
     $('header').html headerTemplate
       copy: headerData
       language: language
@@ -35,20 +36,22 @@ $ ->
 
     $('.nav-items a.is-active').removeClass('is-active')
     $(".nav-items a[data-language='#{language}'").addClass('is-active')
+    console.log language
 
-  $('body').on 'click', '.js-language-toggle', toggleLanguageOnClick
+  $('body').on 'click, touchstart', '.js-language-toggle', toggleLanguageOnClick
 
   $('body').on 'click', '.header-section-nav a', (e)->
     section = $(e.currentTarget).data 'section'
     $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
-  incrementer = 1
+  rotateHeaderBanner = ->
+    $active = $('.header-slide.active-banner')
+    $next = if $active.next('.header-slide').length then $active.next() else $('.header-slide:first')
 
-  changeHeaderBackground = ->
-    $('.header').css "background-image": "url(./images/banner-#{incrementer}.jpg)", 1000
-    incrementer = incrementer + 1
-    incrementer = 1 if(incrementer == 4)
+    $next.addClass('active-banner')
+    $active.removeClass('active-banner')
 
-  setInterval changeHeaderBackground, 3000
+
+  setInterval rotateHeaderBanner, 3000
   initSlideShow()
   initExpandContent()
