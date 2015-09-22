@@ -44,6 +44,11 @@ $ ->
     section = $(e.currentTarget).data 'section'
     $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
 
+  $('body').on 'click', 'a.header-chevron-link', (e) ->
+    e.preventDefault()
+    destination = e.currentTarget.hash
+    $('html,body').animate { scrollTop: $(destination).offset().top - 140 }, 1000
+
   rotateHeaderBanner = ->
     $active = $('.header-slide.active-banner')
     $next = if $active.next('.header-slide').length then $active.next() else $('.header-slide:first')
