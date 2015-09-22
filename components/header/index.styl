@@ -36,19 +36,24 @@ header
 
 .header-content
   height 100%
-  display flex
-  flex-direction column
-  justify-content space-around
+  display table
   z-index 501
   position absolute
   top 0
 
+.header-content-inner
+  display table-cell
+  height 100%
+  width 100%
+  vertical-align middle
+
 .header-text
-  width 85%
-  margin 10% auto
-  padding-top 30px !important
+  width 80%
+  margin 16% auto 0 auto
+  // padding-top 30px !important
   color white
   avant-garde-size('s-headline')
+  text-align justify
   font-size 20px
   > p
     margin 20px 0
@@ -96,7 +101,8 @@ header
     height 100%
 
   .header-text
-    width 75%
+    // width 75%
+    margin 10% auto
     avant-garde-size('xl-headline')
     font-size 30px
     > p
@@ -106,6 +112,7 @@ header
     display block
     height 25%
     text-align center
+    padding-top 60px
     > a
       display inline-block
       padding 8px 18px
@@ -125,11 +132,11 @@ header
   header
     height 100vh
 
-  .header-content
-    height 100%
+  // .header-content
+  //   height 100%
 
   .header-text
-    width 75%
+    // width 75%
     avant-garde-size('xl-headline')
     font-size 50px
     > p
