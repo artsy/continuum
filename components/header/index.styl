@@ -65,6 +65,9 @@ header
 .header-section-nav
   display none
 
+.header-chevron-link
+  display none
+
 // mobile
 @media (max-width 320px)
   .header-text > p
@@ -81,7 +84,6 @@ header
     @media (max-width 480px)
       height 65%
 
-
   .header-text
     padding 0 20px
   .header-text > p
@@ -96,6 +98,36 @@ header
 @media (min-width 481px)
   header
     height 75vh
+
+  .slide-1
+    &:before
+      content "some text 1"
+      position absolute
+      bottom 10px
+      left 30px
+      color white
+      garamond-size('l-caption')
+      font-size 12px
+
+  .slide-2
+    &:before
+      content "some text 2"
+      position absolute
+      bottom 10px
+      left 30px
+      color white
+      garamond-size('l-caption')
+      font-size 12px
+
+  .slide-3
+    &:before
+      content "some text 3"
+      position absolute
+      bottom 10px
+      left 30px
+      color white
+      garamond-size('l-caption')
+      font-size 12px
 
   .header-content
     height 100%
@@ -126,17 +158,33 @@ header
       transition opacity 0.25s
       &:hover
         opacity 0.5
+      &:first-child
+        border-left none
+      &:last-child
+        border-right none
+
+  .header-chevron-link-wrapper
+    display block
+    text-align center
+
+  .header-chevron-link
+    display inline-block
+    chevron()
+    text-decoration none
+    &:visited
+      text-decoration none
+    &::after
+      text-align center
+      display block
+      position relative
+      transform rotate(90deg)
 
 // desktop
 @media (min-width 1200px)
   header
     height 100vh
 
-  // .header-content
-  //   height 100%
-
   .header-text
-    // width 75%
     avant-garde-size('xl-headline')
     font-size 50px
     > p
