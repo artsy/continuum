@@ -38,11 +38,16 @@ $ ->
     $(".nav-items a[data-language='#{language}'").addClass('is-active')
     console.log language
 
-  $('body').on 'click, touchstart', '.js-language-toggle', toggleLanguageOnClick
+  $('body').on 'click touchstart', '.js-language-toggle', toggleLanguageOnClick
 
   $('body').on 'click', '.header-section-nav a', (e)->
     section = $(e.currentTarget).data 'section'
     $('html,body').animate { scrollTop: $("##{section}").offset().top - 140 }, 1000
+
+  $('body').on 'click', 'a.header-chevron-link', (e) ->
+    e.preventDefault()
+    destination = e.currentTarget.hash
+    $('html,body').animate { scrollTop: $(destination).offset().top - 140 }, 1000
 
   rotateHeaderBanner = ->
     $active = $('.header-slide.active-banner')

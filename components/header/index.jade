@@ -1,15 +1,18 @@
 include ../nav/index
 
 .slide-show-container
-  .header-slide.slide-1
-  .header-slide.slide-2
-  .header-slide.slide-3.active-banner
+  .header-slide.slide-1.header-slide-credit
+  .header-slide.slide-2.header-slide-credit
+  .header-slide.slide-3.header-slide-credit.active-banner
 .header-content
-  .header-text
-    p= copy.header.headline[language]
-    p= copy.header.subHeadline[language]
+  .header-content-inner
+    .header-text
+      p= copy.header.headline[language]
+      p= copy.header.subHeadline[language]
 
-  nav.header-section-nav
-    for link in Object.keys(copy.header.navLinks[language])
-      a( data-section='#{link}' )
-        = copy.header.navLinks[language][link]
+      nav.header-section-nav
+        for link in Object.keys(copy.header.navLinks[language])
+          a( data-section='#{link}' )
+            = copy.header.navLinks[language][link]
+      .header-chevron-link-wrapper
+        a.header-chevron-link.icon-chevron-down(href="#artworld") &nbsp;
