@@ -1,122 +1,122 @@
-@media (max-width 480px)
-  .body-content-container
-    padding-top 20px
-    garamond-size('l-body')
+.body-content-container
+  padding-top 20px
+  garamond-size('l-body')
 
-  .main-side-margin
-    margin 0 20px
+.main-side-margin
+  margin 0 20px
 
-  .chevron
-    chevron-item()
+.chevron
+  chevron-item()
 
-  .body-section-title
-    border-top 1px solid gray-color
-    padding 20px 0
-    avant-garde('l-headline')
+.body-section-title
+  border-top 1px solid gray-color
+  padding 20px 0
+  avant-garde('l-headline')
 
-  .margin-bottom
+.margin-bottom
+  margin-bottom 40px
+
+.body-section-content
+  border-top 1px solid gray-color
+  display none
+  line-height 2
+  font-size 16px
+  margin-bottom 60px
+  .body-img
+    width 100%
     margin-bottom 40px
-
-  .body-section-content
-    border-top 1px solid gray-color
-    display none
-    line-height 2
-    font-size 16px
-    margin-bottom 60px
-    .body-img
-      width 100%
-      margin-bottom 40px
-      margin-top 40px
-      height 65vw
-      background-size cover
-      background-position center center
-
-  .vertical-rectangle
-    width 100%
-    height 205px
-
-  .small-rectangle
-    width 100%
-    height 135px
-
-  .body-section-content__section-two
-    @extends .body-section-content
-    h2
-      font-weight bold
-      margin-top 5px
-      font-size 16px
-    .italicize
-      font-style italic
-    p
-      font-size 16px
-
-  .columns
-    -webkit-columns 2
-    -moz-columns: 2
-    columns: 2
     margin-top 40px
-    line-height 1.5
+    height 65vw
+    background-size contain
+    background-position top center
+    background-repeat no-repeat
 
-  .column
-    margin 0 5px
+.vertical-rectangle
+  width 100%
+  height 205px
 
-  .artist-text > p
-    font-size 13px
+.small-rectangle
+  width 100%
+  height 135px
 
-  .artist-text
-    margin-bottom 40px
-    p
-     font-size 13px
-     color gray
-    h2
-      font-weight bold
-      color gray
-      font-size 13px
-
-  .staggered
-    padding-top 155px
-    margin-bottom 40px
-    p
-    font-size 13px
-
-  .artist-container
-    width 100%
-    margin-bottom 40px
-
-  a.artwork
-    text-decoration none
-    &:visited
-      color gray
-
-  .avant-garde-button-black:visited
-    color #fff
-
-  #partnerships .avant-garde-button-black
-    margin-bottom 40px
-
-  .mailto-partners
-    margin-bottom 0px
-
-  .body-section-sub-header
+.body-section-content__section-two
+  @extends .body-section-content
+  h2
     font-weight bold
-    margin-bottom 20px
-    padding-top 20px
+    margin-top 5px
+    font-size 16px
+  .italicize
+    font-style italic
+  p
+    font-size 16px
 
-  section:last-of-type h1.body-section-title
-    border-bottom 1px solid gray-color
+.columns
+  -webkit-columns 2
+  -moz-columns: 2
+  columns: 2
+  margin-top 40px
+  line-height 1.5
 
-  section:last-of-type .body-section-content
-    border-top-style none
+.column
+  margin 0 5px
 
-  .format-spacing
-    padding-bottom 20px
+.artist-text > p
+  font-size 13px
 
-  .body-section-title.is-desktop
-    display none
+.artist-text
+  margin-bottom 40px
+  p
+   font-size 13px
+   color gray
+  h2
+    font-weight bold
+    color gray
+    font-size 13px
 
-  section > a.is-active::after
-    top 25%
-    transform rotate(90deg)
+.staggered
+  padding-top 155px
+  margin-bottom 40px
+  p
+  font-size 13px
+
+.artist-container
+  width 100%
+  margin-bottom 40px
+
+a.artwork
+  text-decoration none
+  &:visited
+    color gray
+
+.avant-garde-button-black:visited
+  color #fff
+
+#partnerships .avant-garde-button-black
+  margin-bottom 40px
+
+.mailto-partners
+  margin-bottom 0px
+
+.body-section-sub-header
+  font-weight bold
+  margin-bottom 20px
+  padding-top 20px
+
+section:last-of-type h1.body-section-title
+  border-bottom 1px solid gray-color
+
+section:last-of-type .body-section-content
+  border-top-style none
+
+.format-spacing
+  padding-bottom 20px
+
+.body-section-title.is-desktop
+  display none
+
+section > a.is-active::after
+  top 25%
+  transform rotate(90deg)
 
 @media (min-width 481px)
   .main-side-margin
@@ -135,18 +135,9 @@
     border-top-style none
     padding-top 0px
     margin-bottom 0px
-    img
-      max-height 400px
-      margin-bottom 0px
-      padding-top 0px
-      width 100%
     .body-img
-      width 100%
       margin-top 0px
       height 65vw
-      background-size contain
-      background-position top center
-      background-repeat no-repeat
       max-height 400px
 
   .artist-text
@@ -158,11 +149,6 @@
       font-weight bold
       color gray
       font-size 15px
-
-  a.artwork
-    text-decoration none
-    &:visited
-      color gray
 
   .body-section-content__section-two
     display flex
@@ -190,9 +176,6 @@
     border-top-style none
 
   .columns
-    -webkit-columns 2
-    -moz-columns: 2
-    columns: 2
     margin-bottom 0px
     padding-top 0px
     margin-left 8%
@@ -202,9 +185,6 @@
 
   .vertical-rectangle
     height 280px
-
-  .column
-    margin 0 5px
 
   .staggered
     padding-top 150px
@@ -237,9 +217,7 @@
   section:last-of-type .body-section-content
     border-top-style none
 
-  .chevron-nav-list a
-    margin-top 20px !important
-    &::after
-      display none
+  .chevron-nav-list a::after
+    display none
 
 @import 'desktop'
