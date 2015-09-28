@@ -52,6 +52,7 @@
     "sqwish": "^0.2.2",
     "stylus": "^0.52.0",
     "uglify-js": "^2.4.24",
-    "watchify": "^3.3.1"
+    "watchify": "^3.3.1",
+    "waypoints": "^4.0.0"
   }
 }

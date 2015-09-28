@@ -18,7 +18,6 @@
 
 .body-section-content
   border-top 1px solid gray-color
-  display none
   line-height 2
   font-size 16px
   margin-bottom 60px
@@ -102,11 +101,8 @@ a.artwork
   margin-bottom 20px
   padding-top 20px
 
-section:last-of-type h1.body-section-title
-  border-bottom 1px solid gray-color
-
-section:last-of-type .body-section-content
-  border-top-style none
+.body-section:last-of-type
+  max-height 70px
 
 .format-spacing
   padding-bottom 20px
@@ -114,18 +110,29 @@ section:last-of-type .body-section-content
 .body-section-title.is-desktop
   display none
 
-section > a.is-active::after
-  top 25%
-  transform rotate(90deg)
+.body-section
+  max-height 67px
+  overflow hidden
+  transition max-height 0.3s ease-in-out
+
+.body-section.is-active
+  max-height 1200px
+  > a::after
+    top 25%
+    transform rotate(90deg)
 
 @media (min-width 481px)
+
+  .body-section
+    max-height none
+
   .main-side-margin
     margin 0 170px
 
   .body-content-container
     padding-top 0px
 
-  section
+  .body-section
     margin-top 200px
 
   .body-section-content
@@ -182,9 +189,11 @@ section > a.is-active::after
 
   .small-rectangle
     height 210px
+    max-width 200px
 
   .vertical-rectangle
     height 280px
+    max-width 200px
 
   .staggered
     padding-top 150px
@@ -211,10 +220,10 @@ section > a.is-active::after
   .top-margin
     margin-top 40px
 
-  section:last-of-type h1.body-section-title
-    border-bottom-style none
+  .body-section:last-of-type
+    max-height none
 
-  section:last-of-type .body-section-content
+  .body-section:last-of-type .body-section-content
     border-top-style none
 
   .chevron-nav-list a::after

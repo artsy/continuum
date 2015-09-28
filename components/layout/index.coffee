@@ -1,4 +1,6 @@
-$ = require 'jquery'
+window.jQuery = window.$ = require 'jquery'
+require 'waypoints/lib/jquery.waypoints.js'
+require 'waypoints/lib/shortcuts/sticky.js'
 headerTemplate = -> require('../header/index.jade') arguments...
 headerData = require('../header/data.coffee')
 bodyTemplate = -> require('../body/index.jade') arguments...
@@ -10,9 +12,11 @@ footerData = require('../footer/data.coffee')
 DEFAULT_LANGUAGE = 'traditional'
 
 $ ->
+  setUpWaypoints = () ->
+    sticky = new Waypoint.Sticky
+      element: $('.header-section-nav')[0]
 
   render = (language) ->
-    # $('header').html headerTemplate
     $('header').html headerTemplate
       copy: headerData
       language: language
@@ -35,8 +39,7 @@ $ ->
     render language
 
     $('.nav-items a.is-active').removeClass('is-active')
-    $(".nav-items a[data-language='#{language}'").addClass('is-active')
-    console.log language
+    $(".nav-items a[data-language='#{language}']").addClass('is-active')
 
   $('body').on 'click touchstart', '.js-language-toggle', toggleLanguageOnClick
 
@@ -57,6 +60,7 @@ $ ->
     $active.removeClass('active-banner')
 
 
+  setUpWaypoints()
   setInterval rotateHeaderBanner, 3000
   initSlideShow()
   initExpandContent()
