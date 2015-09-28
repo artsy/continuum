@@ -100,20 +100,20 @@ header
 
   .slide-1
     &:before
-      content "some text 1"
+      content "Cai Guo-Qiang, Fallen Blossoms: Explosion Project, 2009. Photo by Lonnie Graham, courtesy The Fabric Workshop and Museum"
 
   .slide-2
     &:before
-      content "some text 2"
+      content "James Turrell, Rendering for Aten Reign, 2013. © James Turrell / Rendering: Andreas Tjeldflaat, 2012 © Solomon R. Guggenheim Foundation"
 
   .slide-3
     &:before
-      content "some text 3"
+      content "China, Han Dynasty, Silk fabric, 206 BC -220 AD. © Art Exhibitions China / Musée provincial du Gansu"
 
   .header-slide:before
     position absolute
-    bottom 30px
-    left 30px
+    bottom 10px
+    left 13%
     color white
     garamond-size('l-caption')
     font-size 12px
@@ -134,7 +134,7 @@ header
     display block
     height 25%
     text-align center
-    padding-top 60px
+    padding-top 30px
     > a
       display inline-block
       padding 8px 18px
@@ -152,6 +152,24 @@ header
         border-left none
       &:last-child
         border-right none
+
+  .stuck
+    position fixed
+    top 0
+    left 0
+    width 100%
+    padding-top 0px
+    border-bottom 1px solid #e5e5e5
+    background-color #fff
+    z-index 600
+    opacity 1
+    height 94px !important
+
+  .header-section-nav.stuck a
+    color #999
+    &:hover
+      color #6A0BC1
+      opacity 1
 
   .header-chevron-link-wrapper
     display block
@@ -191,6 +209,7 @@ header
       border-right @border-left
       text-decoration none
       avant-garde-size('l-headline')
+      font-size 14px
       color white
       transition opacity 0.25s
       &:hover
