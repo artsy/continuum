@@ -110,10 +110,12 @@ header
     &:before
       content "China, Han Dynasty, Silk fabric, 206 BC -220 AD. © Art Exhibitions China / Musée provincial du Gansu"
 
-  .header-slide:before
+  .header-slide
+    background-attachment fixed
+    &:before
     position absolute
     bottom 10px
-    left 13%
+    left 13% // fix this
     color white
     garamond-size('l-caption')
     font-size 12px
