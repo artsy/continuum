@@ -15,7 +15,8 @@ DEFAULT_LANGUAGE = 'traditional'
 $ ->
   setUpWaypoints = () ->
     sticky = new Waypoint.Sticky
-      element: $('.header-section-nav')[0]
+      element: $('.header-section-nav')[0],
+      offset: '-35%'
 
   render = (language) ->
     $('header').html headerTemplate
