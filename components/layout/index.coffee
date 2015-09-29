@@ -1,4 +1,5 @@
 window.jQuery = window.$ = require 'jquery'
+tocca = require 'tocca'
 require 'waypoints/lib/jquery.waypoints.js'
 require 'waypoints/lib/shortcuts/sticky.js'
 headerTemplate = -> require('../header/index.jade') arguments...
