@@ -18,6 +18,7 @@
 
 .body-section-content
   border-top 1px solid gray-color
+  display none
   line-height 2
   font-size 16px
   margin-bottom 60px
@@ -101,8 +102,11 @@ a.artwork
   margin-bottom 20px
   padding-top 20px
 
-.body-section:last-of-type
-  max-height 70px
+.body-section:last-of-type h1.body-section-title
+  border-bottom 1px solid gray-color
+
+.body-section:last-of-type .body-section-content
+  border-top-style none
 
 .format-spacing
   padding-bottom 20px
@@ -110,16 +114,9 @@ a.artwork
 .body-section-title.is-desktop
   display none
 
-.body-section
-  max-height 67px
-  overflow hidden
-  transition max-height 0.3s ease-in-out
-
-.body-section.is-active
-  max-height 1200px
-  > a::after
-    top 25%
-    transform rotate(90deg)
+.body-section > a.is-active::after
+  top 25%
+  transform rotate(90deg)
 
 @media (min-width 481px)
 
@@ -221,8 +218,8 @@ a.artwork
   .top-margin
     margin-top 40px
 
-  .body-section:last-of-type
-    max-height none
+  .body-section:last-of-type h1.body-section-title
+    border-bottom-style none
 
   .body-section:last-of-type .body-section-content
     border-top-style none

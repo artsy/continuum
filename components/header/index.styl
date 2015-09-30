@@ -110,13 +110,15 @@ header
     &:before
       content "China, Han Dynasty, Silk fabric, 206 BC -220 AD. © Art Exhibitions China / Musée provincial du Gansu"
 
-  .header-slide:before
-    position absolute
-    bottom 10px
-    left 13%
-    color white
-    garamond-size('l-caption')
-    font-size 12px
+  .header-slide
+    background-attachment fixed
+    &:before
+      position absolute
+      bottom 10px
+      left 13%
+      color white
+      garamond-size('l-caption')
+      font-size 12px
 
   .header-content
     height 100%
@@ -214,10 +216,29 @@ header
       transition opacity 0.25s
       &:hover
         opacity 0.5
-@media (max-height 701px)
+
+@media (max-height 761px)
   .header-chevron-link-wrapper
     display none
 
   .header-section-nav
     padding-top 15px
 
+@media (min-width 1600px)
+  .header-slide:before
+    width 1200px
+    left "calc(50% - %s)" % 600px
+
+  .header-chevron-link-wrapper
+    margin-top 68px
+
+  .header-section-nav
+    margin-top 60px
+    > a
+      font-size 22px
+
+  .header-section-nav.stuck
+    margin-top 0px
+
+  .header-chevron-link::after
+    font-size 32px
