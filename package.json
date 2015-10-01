@@ -44,6 +44,7 @@
     "bucket-assets": "^0.2.10",
     "coffee-script": "^1.9.3",
     "coffeeify": "^1.1.0",
+    "fastclick": "^1.0.6",
     "foreman": "^1.4.1",
     "jade": "^1.11.0",
     "jadeify": "^4.4.0",
