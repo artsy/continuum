@@ -18,7 +18,6 @@
 
 .body-section-content
   border-top 1px solid gray-color
-  display none
   line-height 2
   font-size 16px
   margin-bottom 60px
@@ -30,6 +29,16 @@
     background-size contain
     background-position top center
     background-repeat no-repeat
+
+.js-section-content
+  overflow-y hidden
+  max-height 1000px
+  transition max-height .5s ease-in-out
+
+.js-section-content.closed
+  max-height 0px
+  margin-bottom 0px
+  border-top-style none
 
 .vertical-rectangle
   width 100%

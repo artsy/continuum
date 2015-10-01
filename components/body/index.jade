@@ -1,7 +1,7 @@
 section.body-section#artworld
   a.js-display-content.is-mobile.chevron
     h1.body-section-title= copy.artWorld.sectionTitle[language]
-  .body-section-content.js-section-content
+  .body-section-content.js-section-content.closed
     .carousel-track__image.right-gutter-formatter
       include ../carousel/carousel.jade
       for figure in copy.artWorld.carousel
@@ -12,7 +12,7 @@ section.body-section#artworld
 section.body-section#collecting
   a.js-display-content.is-mobile.chevron
     h1.body-section-title= copy.collecting.collectingTitle[language]
-  .body-section-content__section-two.js-section-content
+  .body-section-content__section-two.js-section-content.closed
     .columns.left-gutter-formatter
       .column
           include ./mixins/artist-container.jade
@@ -32,7 +32,7 @@ section.body-section#collecting
 section.body-section#genome
   a.js-display-content.is-mobile.chevron
     h1.body-section-title= copy.genome.genomeTitle[language]
-  .body-section-content.js-section-content
+  .body-section-content.js-section-content.closed
     .right-gutter-formatter
       .body-img(style="background-image: url('./images/body-3.jpg')")
     .left-gutter-formatter
@@ -41,7 +41,7 @@ section.body-section#genome
 section.body-section#ios
   a.js-display-content.is-mobile.chevron
     h1.body-section-title.is-mobile= copy.ios.iosTitle[language]
-  .body-section-content.js-section-content.flex-row__reverse
+  .body-section-content.js-section-content.flex-row__reverse.closed
     .left-gutter-formatter
       .body-img(style="background-image: url('./images/body-4.jpg')")
     .right-gutter-formatter
@@ -52,7 +52,7 @@ section.body-section#partnerships
   h1.body-section-title.is-desktop= copy.partnership.partnershipTitle[language]
   a.js-display-content.is-mobile.chevron
     h1.body-section-title= copy.partnership.partnershipTitle[language]
-  .body-section-content.js-section-content.flex-row
+  .body-section-content.js-section-content.flex-row.closed
     .right-gutter-formatter
       p.body-section-sub-header= copy.partnership.gallery.subTitle[language]
       p.format-spacing= copy.partnership.gallery.text[language]
