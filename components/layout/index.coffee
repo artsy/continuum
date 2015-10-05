@@ -1,5 +1,6 @@
 window.jQuery = window.$ = require 'jquery'
 tocca = require 'tocca'
+attachFastClick = require 'fastclick'
 require 'waypoints/lib/jquery.waypoints.js'
 require 'waypoints/lib/shortcuts/sticky.js'
 headerTemplate = -> require('../header/index.jade') arguments...
@@ -13,6 +14,8 @@ footerData = require('../footer/data.coffee')
 DEFAULT_LANGUAGE = 'traditional'
 
 $ ->
+  attachFastClick document.body
+
   setUpWaypoints = () ->
     sticky = new Waypoint.Sticky
       element: $('.header-section-nav')[0],
