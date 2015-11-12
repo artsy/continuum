@@ -1,8 +1,8 @@
 module.exports =
   artWorld:
     sectionTitle: {
-      simplified: '艺术世界在线',
-      traditional: 'Artsy藝術世界'
+      simplified: '艺术品在线',
+      traditional: '藝術品在線'
     },
     carousel: [
       {
@@ -35,35 +35,35 @@ module.exports =
       }
     ],
     artWorldBody: {
-      simplified: 'Artsy荟萃全球最顶尖的画廊、美术馆、基金会、艺术村、艺术博览会及拍卖会资讯，一站在手，天下尽览。我们的庞大资料库不断更新，现有超过28万张图片共4万多位艺术家在艺术、建筑及设计范畴的作品，横跨古代、近代、现代及当代，亦是迄今全球最大当代艺术线上资料库。Artsy的用家包括艺术爱好者、美术馆常客、资助机构、收藏家、艺术学生及艺术教育从业者，同在Artsy发现艺术、学习艺术、收藏艺术。',
-      traditional: 'Artsy薈萃全球最頂尖的畫廊、藝術館、基金會、藝術村、藝術博覽會及拍賣會資訊。我們的龐大資料庫不斷更新，現有超過28萬張圖片，搜羅共4萬多位藝術家在藝術、建築及設計範疇的作品，橫跨古代、近代、現代及當代，亦是迄今全球最大的當代藝術網上資料庫。Artsy的用家包括藝術愛好者、博物館常客、藝術資助機構、收藏家、藝術學生及藝術教育工作者，同在Artsy發現藝術、學習藝術、收藏藝術。'
+      simplified: 'Artsy 拥有全世界最领先的画廊、博物馆、基金会、艺术品展览与拍卖的综合资源。我们的藏品数据库涵盖全球4万多位艺术家的作品, 28万多幅美术、建筑与生活艺术品佳作，横跨古代、现代与当代艺术风格。当代艺术的网上藏品数量尤为丰富，居全球之首。无论是资深收藏家和学者，还是艺术赞助人、博物馆爱好者或学生，都可以通过 Artsy 发掘艺术的价值，找到真正打动心灵的艺术作品。',
+      traditional: 'Artsy 擁有全世界最領先的畫廊、博物館、基金會、藝術品展覽與拍賣的綜合資源。我們的藏品資料庫涵蓋全球4萬多位藝術家的作品, 28萬多幅美術、建築與生活藝術品佳作，橫跨古代、現代與當代藝術風格。當代藝術的網上藏品數量尤為豐富，居全球之首。無論是資深收藏家和學者，還是藝術贊助者、博物館愛好者或學生，都可以通過Artsy發掘藝術的價值，找到真正打動心靈的藝術作品'
     }
   collecting:
     collectingTitle: {
-      simplified: '收藏在 Artsy',
-      traditional: 'Artsy收藏藝術'
+      simplified: '在Artsy寻宝',
+      traditional: '在 Artsy 尋寶'
     },
     text: {
-      simplified: '目前，Artsy有超过16万件艺术品可供收藏，作品来自全球各地首屈一指的画廊、慈善义拍及商业拍卖，价格由100美元至100万美元不等，名单天天更新。使用Artsy联络画廊、在拍卖会投标及购置艺术品都是完全免费的。',
-      traditional: '目前，Artsy有超過16萬件藝術品可供收藏購置。作品來自全球各地首屈一指的畫廊、慈善拍賣及商業拍賣，價格由100美元至100萬美元不等，名單天天更新。使用Artsy聯絡畫廊、拍賣投標及購置藝術品都是完全免費的。'
+      simplified: '在Artsy可购买的艺术品多达16万件，均为全球顶尖画廊、公益以及商业竞拍之精品。每日有新艺术品上线，价格从100美元到100万美元不等。买家可以通过Artsy免费与画廊建立联系，参与竞拍或直接购买心仪的作品。',
+      traditional: '在 Artsy 可購買的藝術品多達16萬件，均為全球頂尖畫廊、公益以及商業競拍之精品。每日有新藝術品上線，價格從100美元到100萬美元不等。買家可以通過Artsy免費與畫廊建立聯繫，參與競拍或直接購買心儀的作品。'
     }
   genome:
     genomeTitle: {
-      simplified: '艺术基因鉴定',
-      traditional: '藝術基因鑑定'
+      simplified: '艺术基因测序 (The Art Genome Project)',
+      traditional: '藝術基因測序 (The Art Genome Project)'
     },
     text: {
-      simplified: '“艺术基因鉴定”（The Art Genome Project）是一个验证分类系统架构，结合艺术与科技，令Artsy更形强大，独一无二。系统逐一分析作品特点，绘制艺术基因图谱，连系古今艺术家、艺术品、建筑物和设计项目。现时“艺术基因鉴定”已验证超过1,000个基因，包括艺术史运动、艺术品主题及作品媒介等。',
-      traditional: '「藝術基因鑑定」（The Art Genome Project）是一個由Artsy研發的驗證分類系統，結合藝術與科技，令Artsy的藝術世界更形強大。系統逐一分析作品特點，繪製「藝術基因」圖譜，連繫古今藝術家、藝術品、建築項目和設計作品，追尋當中千絲萬縷的相似之處。現時「藝術基因鑑定」已驗證超過1,000個基因，包括藝術運動、藝術品主題及作品媒介等。'
+      simplified: '艺术基因测序是Artsy特有的艺术品评级系统和技术架构，是Artsy的核心价值所在。它分析出每一件艺术品的“独特基因”(“genes”)，用以追溯艺术家与艺术作品在历史上的纵横关系。现在我们已分析出1000多种基于历史进程、创作主旨和作品质量的“基因”。',
+      traditional: '藝術基因測序是Artsy特有的藝術品分類系統和技術架構，是Artsy的核心價值所在。它分析出每一件藝術品的“獨特基因”(“genes”)，用以追溯藝術家與藝術作品在歷史上的縱橫關係。現在我們已分析出1000多種基於歷史進程、創作主旨和作品質量的“基因”。'
     },
   ios:
     iosTitle: {
-      simplified: 'Artsy 的iOS',
-      traditional: '藝術世界'
+      simplified: 'Artsy与iOS',
+      traditional: 'Artsy 與 iOS'
     },
     text: {
-      simplified: '随时在线，无远弗届 Artsy iOS 应用程式专为iPhone手機及iPad平板電腦设计，让您随时随地透过移動設備浏览艺术，了解艺术，储存图片，收藏作品。它更是您的个性化在地指南，带您走遍每个Artsy专题重点艺术博览会。请扫描下方二维码直接下载 或在App Store 线上应用程式商店搜索“Artsy”。',
-      traditional: 'Artsy iOS app專為iPhone和iPad設計，讓你隨時隨地瀏覽藝術，了解藝術，儲存圖片，購藏作品。你更可按自己的喜好設定，讓它成為你的地道指南，帶你走遍每個Artsy專題重點藝術博覽會。請掃描QR code直接下載 或在App Store搜尋「Artsy」。'
+      simplified: '通过 Artsy 的 iPhone 与 iPad App，您可以随时随地接入我们庞大的数据库，在线上浏览、收藏、研究和购买艺术品，并在参观线下博览会时定制随身向导。扫描本页下方二维条码，即可在 App Store 中下载本 App。',
+      traditional: '通過 Artsy 的 iPhone 與 iPad App，您可以隨時隨地接入我們龐大的資料庫，在線上瀏覽、收藏、研究和購買藝術品，並在參觀博覽會時訂製隨身嚮導。掃描本頁下方二維條碼，即可在 App Store 中下載本 App。'
     },
     link: {
       simplified: '下载应用程序',
@@ -71,43 +71,43 @@ module.exports =
     }
   partnership:
     partnershipTitle: {
-      simplified: '加盟 Artsy',
-      traditional: 'Artsy夥伴加盟'
+      simplified: '成为Artsy的合作伙伴',
+      traditional: '成為 Artsy 的合作夥伴'
     },
     gallery:
       subTitle: {
-        simplified: '画廊伙伴'
-        traditional: '畫廊夥伴'
+        simplified: '画廊'
+        traditional: '畫廊'
       },
       text: {
-        simplified: '画廊伙伴可在Artsy的中央在线平台，接触全世界的艺术爱好者和收藏家。除了宣传及促销，画廊伙伴可以透过Artsy系统工具，管理上传图片资讯，支援画廊运作，工具包括云端内容管理系统、iPad平板电脑应用程式及iPhone手机应用程式。Artsy画廊伙伴加盟计划仅供获邀请客户专享，月费形式收费，价钱相宜。',
-        traditional: '畫廊夥伴可透過互聯網，在Artsy接觸全世界的藝術愛好者和收藏家。除了宣傳促銷，畫廊夥伴可使用Artsy系統工具管理專頁，上載圖片和其他資訊，支援畫廊運作。系統工具包括雲端內容管理系統（CMS）、iPad及iPhone應用程式。Artsy畫廊夥伴加盟計劃僅供獲邀請客戶專享，月費價錢相宜，簡單清晰，絕無其他隱藏收費。'
+        simplified: 'Artsy 为画廊提供面向全球观众、艺术爱好者和收藏家的网络平台枢纽。在推广宣传画廊作品的基础上，Artsy 平台还可以提供馆藏管理与运营的后台支持，包括在云端的线上展品管理以及 iOS 系统下的管理软件。Artsy 的合作伙伴仅限于收到邀请的画廊，合作方每月缴纳会员费用。',
+        traditional: 'Artsy 為畫廊提供面向全球觀眾、藝術愛好者和收藏家的網路平台樞紐。在推廣宣傳畫廊作品的基礎上，Artsy 平台更提供館藏管理與營運的後台系統，包括雲端的線上展品管理以及iOS系統下的管理軟體。 Artsy的合作夥伴僅限於收到邀請的畫廊，合作方每月繳納會員費用。'
       },
       link: {
         simplified: '了解更多',
-        traditional: '加盟詳情'
+        traditional: '了解更多'
       },
     institution:
       subTitle: {
-        simplified: '机构伙伴',
-        traditional: '機構夥伴'
+        simplified: '基金会与博物馆',
+        traditional: '基金會與博物館'
       },
       text: {
-        simplified: '于Artsy占一席位，独享机构专页，宣传展览、藏品及节目，并可透过Artsy电子商业平台出售限量版艺术品。',
-        traditional: '機構夥伴可在Artsy獨享機構專頁，宣傳展覽、藏品及節目，並可透過Artsy電子商業平台出售限量版藝術品。'
+        simplified: '基金会与博物馆可以在 Artsy 平台上推广展览、馆藏以及其他活动，通过 Artsy 的网上交易平台出售限量版艺术品。',
+        traditional: '基金會與博物館可以在Ar​​tsy平台上推廣展覽、館藏以及其他活動，通過Artsy的線上交易平台出售限量版藝術品。'
       },
       link: {
         simplified: '了解更多',
-        traditional: '加盟詳情'
+        traditional: '了解更多'
       },
     auction:
       subTitle: {
-        simplified: '拍卖合作伙伴',
-        traditional: '拍賣夥伴'
+        simplified: '拍卖行',
+        traditional: '拍賣行'
       },
       text: {
-        simplified: 'Artsy欢迎精选慈善拍卖会及商业拍卖行加盟。'
-        traditional: 'Artsy歡迎精選慈善拍賣及商業拍賣行加盟。'
+        simplified: 'Artsy 愿与公益拍卖和商业拍卖行进行合作。'
+        traditional: 'Artsy願與公益拍賣和商業拍賣行進行合作。'
       },
       link: {
         simplified: '了解更多',

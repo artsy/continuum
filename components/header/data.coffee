@@ -1,14 +1,14 @@
 module.exports =
   header:
     headline: {
-      simplified: 'Artsy 致力透过互联网，人与全球艺术品一点即通。',
-      traditional: 'Artsy致力成為一個重點網上平台，讓人只需透過互聯網，即可飽覽全球藝術品。'
+      simplified: 'Artsy的使命是让任何人都可以通过互联网随时随地欣赏世界的艺术精髓。',
+      traditional: 'Artsy 的使命是讓任何人都可以通過網路隨時隨地欣賞全世界的藝術精髓。'
     },
     subHeadline: {
-      simplified: '我们视 Artsy 为一个资源，学习艺术，收藏艺术，取之不尽。',
-      traditional: '我們視Artsy為資源，讓人能在此學習藝術，探索藝術，收藏藝術，取之不盡，用之不竭。'
+      simplified: '我们是艺术品研究与收藏的资源宝库。',
+      traditional: '我們是藝術品研究與收藏的資源寶庫。'
     },
     navLinks: {
-      simplified: {'artworld': '艺术世界在线', 'collecting': '收藏在 Artsy', 'genome': '艺术基因鉴定', 'ios': 'Artsy的iOS', 'partnerships': '加盟 Artsy'},
-      traditional: {'artworld': 'Artsy藝術世界', 'collecting': 'Artsy收藏藝術', 'genome': '藝術基因鑑定', 'ios': 'Artsy的iOS', 'partnerships': 'Artsy夥伴加盟'}
+      simplified: {'artworld': '艺术品在线', 'collecting': '在Artsy寻宝', 'genome': '艺术基因测序', 'ios': 'Artsy与iOS', 'partnerships': '成为Artsy的合作伙伴'},
+      traditional: {'artworld': '線上藝術品', 'collecting': '在Artsy尋寶', 'genome': '藝術基因測序', 'ios': 'Artsy 與 iOS', 'partnerships': '成為Artsy的合作夥伴'}
     }
