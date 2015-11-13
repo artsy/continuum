@@ -9,29 +9,29 @@ module.exports =
         image_url: './images/body-1-1.jpg',
         englishCaption: 'Musée du Louvre',
         caption:
-          simplified: '画廊',
+          simplified: '卢浮宫',
           traditional: '畫廊'
       },
       {
         image_url: './images/body-1-2.jpg',
         englishCaption: 'Los Angeles Modern Auctions',
         caption:
-          simplified: '美术馆',
-          traditional: '藝術館'
+          simplified: '拍卖行',
+          traditional: '盧浮宮'
       },
       {
         image_url: './images/body-1-3.jpg',
         englishCaption: 'Pearl Lam',
         caption:
-          simplified: '艺术博览会',
-          traditional: '藝術博覽會'
+          simplified: '艺术门',
+          traditional: '藝術門'
       },
       {
         image_url: "./images/body-1-4.jpg",
         englishCaption: 'The Armory Show',
         caption:
-          simplified: '拍卖会',
-          traditional: '拍賣會'
+          simplified: '博览会',
+          traditional: '博覽會'
       }
     ],
     artWorldBody: {
