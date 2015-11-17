@@ -66,8 +66,8 @@ module.exports =
       traditional: '通過 Artsy 的 iPhone 與 iPad App，您可以隨時隨地接入我們龐大的資料庫，在線上瀏覽、收藏、研究和購買藝術品，並在參觀博覽會時訂製隨身嚮導。掃描本頁下方二維條碼，即可在 App Store 中下載本 App。'
     },
     link: {
-      simplified: '下载应用程序',
-      traditional: '盡在掌中'
+      simplified: '下载 App',
+      traditional: '下載 App'
     }
   partnership:
     partnershipTitle: {
