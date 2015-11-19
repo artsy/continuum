@@ -31,7 +31,7 @@ section.body-section#collecting
         p= copy.collecting.text[language]
 section.body-section#genome
   a.js-display-content.is-mobile.chevron
-    h1.body-section-title= copy.genome.genomeTitle[language]
+    h1.body-section-title= copy.genome.genomeTitle[language].replace(' (The Art Genome Project)', '')
   .body-section-content.js-section-content.closed
     .right-gutter-formatter
       .body-img(style="background-image: url('./images/body-3.jpg')")
