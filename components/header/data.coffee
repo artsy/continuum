@@ -9,6 +9,6 @@ module.exports =
       traditional: '我們是藝術品研究與收藏的資源寶庫。'
     },
     navLinks: {
-      simplified: {'artworld': '艺术品在线', 'collecting': '在Artsy寻宝', 'genome': '艺术基因测序', 'ios': 'Artsy与iOS', 'partnerships': '成为Artsy的合作伙伴'},
-      traditional: {'artworld': '線上藝術品', 'collecting': '在Artsy尋寶', 'genome': '藝術基因測序', 'ios': 'Artsy 與 iOS', 'partnerships': '成為Artsy的合作夥伴'}
+      simplified: {'artworld': '艺术品在线', 'collecting': '在 Artsy 寻宝', 'genome': '艺术基因测序', 'ios': 'Artsy 与 iOS', 'partnerships': '成为 Artsy 的合作伙伴'},
+      traditional: {'artworld': '線上藝術品', 'collecting': '在 Artsy 尋寶', 'genome': '藝術基因測序', 'ios': 'Artsy 與 iOS', 'partnerships': '成為 Artsy 的合作夥伴'}
     }
