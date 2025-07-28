@@ -9,7 +9,6 @@ Meta
 * __State:__ production
 * __Production:__ [http://www.artsy.cn](http://www.artsy.cn/) | [S3](https://aws.amazon.com/s3/)
 * __Github:__ [https://github.com/artsy/continuum](https://github.com/artsy/continuum)
-* __Point People:__ [@craigspaeth](https://github.com/craigspaeth), [@xtina-starr](https://github.com/xtina-starr)
 
 Set-Up
 ---
